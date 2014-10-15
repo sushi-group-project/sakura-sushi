@@ -2,6 +2,8 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 $fontred: hsla(346,100%,37%,1);
+$darkgray: hsla(0, 0%, 88%, 1);
+$lightgray: hsla(0, 0%, 92%, 1);
 // Custom Styles
 
 body {
@@ -86,10 +88,14 @@ body {
     float: left;
     width: 32%;
     height: 242px;
-    background-color: hsl(0,0,92);
+    background-color: $darkgray;
     border: 1px solid hsl(0,0,70);
     margin-right: 2%;
+    transition: background-color 0.3s ease;
     position: relative;
+    &:hover{
+      background-color: $lightgray;
+    }
     h2{
     text-align: left;
     position: absolute;
@@ -112,11 +118,15 @@ body {
   .header-box-two{
     float: left;
     width: 32%;
+    transition: background-color 0.3s ease;
     position: relative;
     height: 242px;
-    background-color: hsl(0,0,92);
+    background-color: $darkgray;
     border: 1px solid hsl(0,0,70);
     width: 32%;
+    &:hover{
+      background-color: $lightgray;
+    }
     h2{
       text-align: left;
       position: absolute;
@@ -131,22 +141,25 @@ body {
   .header-box-three{
     float: right;
     width: 32%;
+    transition: background-color 0.3s ease;
     position: relative;
-    background-color: hsl(0,0,92);
+    background-color: hsla(0, 0%, 88%, 1);
     border: 1px solid hsl(0,0,70);
     height: 242px;
-    h2{text-align: left;
+    h2{
+    text-align: left;
     position: absolute;
     left: 4%;
     width: 92%;
     padding-bottom: 2%;
     margin-top: 18px;
-    border-bottom: 1px solid $fontred;}
-    & h2:hover{
-      background-color: hsla(0, 0%, 69%, 1);
+    border-bottom: 1px solid $fontred;
     }
-
+    &:hover{
+      background-color: $lightgray;
+    }
   }
+
 
 @media (min-width: 600px) {
   .center-unit{
