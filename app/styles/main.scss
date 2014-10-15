@@ -1,0 +1,222 @@
+ // Bourbon & Neat
+@import '../../bower_components/bourbon/dist/bourbon';
+@import '../../bower_components/neat/app/assets/stylesheets/neat';
+
+// Custom Styles
+
+body {
+  background: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-family: "Adobe Caslon Pro", Georgia, serif;
+  font-size: 62.5%;
+
+}
+.container {
+  max-width: 1200px;
+
+}
+
+  .center-unit{
+  margin: auto;
+  height: 800px;
+
+}
+  .header{
+    margin-top: 20px;
+    border: 2px dashed blue;
+    height: 663px;
+  }
+  .header-top{
+    border: 2px solid green;
+    height: 98px;
+    width: 100%;
+    position: relative;
+  }
+  .header-logo{
+    width: 25%;
+    position: absolute;
+    border: 5px solid orange;
+    height:100%;
+    font-size: 3.5em;
+  }
+  .header-social{
+    position: absolute;
+    width: 20%;
+    margin-left:80%;
+    font-size: 2.2em;
+    border: 3px dashed purple;
+    height: 80px;
+  }
+  .social-list ul{
+    list-style-type: none;
+    overflow: auto;
+    display: inline;
+  }
+  .social-list li{
+    float: left;
+    margin-left: 4%;
+    display: inline-block;
+    height: 25px;
+    background-color: gray;
+    border: 1px solid black;
+  }
+  .header-pic {
+    height: 313px;
+    width: 100%;
+    border: 3px solid red;
+  }
+  #header-pic-image{
+    margin-top: 18px;
+    background-color: black;
+    width: 100%;
+    height: 271px;
+  }
+  .header-boxes{
+    height: 250px;
+    width: 100%;
+    overflow: auto;
+    border: 5px dotted hsl(205,51,59);
+  }
+
+@media (min-width: 600px) {
+  .center-unit{
+    width: 75%;
+  }
+}
+//tabs here//
+section{
+	width: 70%;
+	margin: 0 auto;
+  float: left;
+  border: 3px dashed blue;
+}
+
+ul.tabs{
+	margin: 10px;
+  margin-bottom: 0;
+	padding: 0px;
+	list-style: none;
+  border-bottom: solid 1px HSLA(0, 0%, 88%, 1);
+  li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    cursor: pointer;
+  }
+}
+
+.tabs li.current{
+	background-color: white;
+	color: #222;
+  border: solid 1px HSLA(0, 0%, 88%, 1);
+  border-bottom: solid 1px white;
+}
+
+.tab-content{
+	display: none;
+	background: white;
+	padding: 15px;
+}
+
+.tab-content.current{
+	display: inherit;
+}
+
+.cbt {
+  width: 100%;
+  height: 200px;
+}
+//end tabs
+
+//mike's footer and side part
+
+$fontred: hsla(346,100%,37%,1);
+// Custom Styles
+
+
+
+.food {
+  @include span-columns(4);
+  float: right;
+  width:25%;
+  border: 2px solid orange;
+
+
+ img {
+   margin-top: 20px;
+   border: 2px solid ;
+ }
+
+}
+
+h2 {
+
+  text-align:center;
+}
+
+.center-part{
+  width: 100%;
+  height: 1040px;
+  border: 3px dotted green;
+}
+//FOOTER STYLE
+
+footer{
+font-family:'Junge', serif;
+border-top: 1px solid;
+border-color: hsla(240,1%,83%,1);
+height: 100px;
+width: 100%;
+clear: both;
+border: 2px solid black;
+
+
+}
+
+.footleft {
+  margin-top:19px;
+  word-spacing: 3px;
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.name:hover{
+  color: $fontred;
+}
+
+.footright  {
+  float: right;
+  margin-top: -20px;
+  color: hsla(200,1%,39%,1);
+
+}
+
+.footright a {
+  text-decoration: none;
+  color: hsla(200,1%,39%,1);
+  padding: 5px;
+}
+
+.footright a:hover{
+color: $fontred;
+}
+
+.footcenter img{
+  width: 35px;
+  margin-left: 489px;
+  margin-top: -52px;
+  background-color: #FFF;
+  opacity: 0.4;
+-webkit-filter: invert(100%);
+}
+
+.footcenter img:hover{
+  background-color: $fontred;
+  opacity: 1;
+  -webkit-filter: invert(1%);
+}
