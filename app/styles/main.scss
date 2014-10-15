@@ -24,11 +24,11 @@ body {
 }
   .header{
     margin-top: 20px;
-    border: 2px dashed blue;
+
     height: 663px;
   }
   .header-top{
-    border: 2px solid green;
+
     height: 98px;
     width: 100%;
     position: relative;
@@ -36,7 +36,6 @@ body {
   .header-logo{
     width: 25%;
     position: absolute;
-    border: 5px solid orange;
     height:100%;
     font-size: 3.5em;
   }
@@ -64,19 +63,63 @@ body {
   .header-pic {
     height: 313px;
     width: 100%;
-    border: 3px solid red;
+
   }
   #header-pic-image{
     margin-top: 18px;
     background-color: black;
     width: 100%;
     height: 271px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
   }
   .header-boxes{
     height: 250px;
     width: 100%;
     overflow: auto;
-    border: 5px dotted hsl(205,51,59);
+
+  }
+  #header-box-one{
+    float: left;
+    width: 32%;
+    height: 242px;
+    background-color: hsl(0,0,92);
+    border: 1px solid hsl(0,0,70);
+    margin-right: 2%;
+    position: relative;
+    h2{
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 18px;
+
+    }
+    h3{
+    position: absolute;
+    }
+    span{
+    position: absolute;
+    }
+    p{
+    position: absolute;
+    }
+  }
+  #header-box-two{
+    float: left;
+    width: 32%;
+    height: 242px;
+    background-color: hsl(0,0,92);
+    border: 1px solid hsl(0,0,70);
+    width: 32%;
+  }
+  #header-box-three{
+    float: right;
+    width: 32%;
+    background-color: hsl(0,0,92);
+    border: 1px solid hsl(0,0,70);
+    height: 242px;
+
   }
 
 @media (min-width: 600px) {
