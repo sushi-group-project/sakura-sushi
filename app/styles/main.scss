@@ -1,7 +1,7 @@
  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
-
+$fontred: hsla(346,100%,37%,1);
 // Custom Styles
 
 body {
@@ -24,12 +24,11 @@ body {
 }
   .header{
     margin-top: 20px;
-
     height: 663px;
   }
   .header-top{
-
-    height: 98px;
+    border-bottom: 2px solid $fontred;
+    height: 102px;
     width: 100%;
     position: relative;
   }
@@ -38,6 +37,7 @@ body {
     position: absolute;
     height:100%;
     font-size: 3.5em;
+
   }
   .header-social{
     position: absolute;
@@ -78,10 +78,11 @@ body {
   .header-boxes{
     height: 250px;
     width: 100%;
+    margin-top: -10px;
     overflow: auto;
 
   }
-  #header-box-one{
+  .header-box-one{
     float: left;
     width: 32%;
     height: 242px;
@@ -90,10 +91,13 @@ body {
     margin-right: 2%;
     position: relative;
     h2{
+    text-align: left;
     position: absolute;
-    margin-left: 10%;
+    left: 4%;
+    width: 92%;
+    padding-bottom: 2%;
     margin-top: 18px;
-
+    border-bottom: 1px solid $fontred;
     }
     h3{
     position: absolute;
@@ -105,20 +109,42 @@ body {
     position: absolute;
     }
   }
-  #header-box-two{
+  .header-box-two{
     float: left;
     width: 32%;
+    position: relative;
     height: 242px;
     background-color: hsl(0,0,92);
     border: 1px solid hsl(0,0,70);
     width: 32%;
+    h2{
+      text-align: left;
+      position: absolute;
+      left: 4%;
+      width: 92%;
+      padding-bottom: 2%;
+      margin-top: 18px;
+      border-bottom: 1px solid $fontred;
+    }
+
   }
-  #header-box-three{
+  .header-box-three{
     float: right;
     width: 32%;
+    position: relative;
     background-color: hsl(0,0,92);
     border: 1px solid hsl(0,0,70);
     height: 242px;
+    h2{text-align: left;
+    position: absolute;
+    left: 4%;
+    width: 92%;
+    padding-bottom: 2%;
+    margin-top: 18px;
+    border-bottom: 1px solid $fontred;}
+    & h2:hover{
+      background-color: hsla(0, 0%, 69%, 1);
+    }
 
   }
 
