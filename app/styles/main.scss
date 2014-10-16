@@ -237,6 +237,9 @@ ul.tabs{
     padding: 10px 15px;
     margin-bottom: -1px;
     cursor: pointer;
+    &:hover {
+      color: $fontred;
+    }
   }
 }
 
@@ -257,6 +260,10 @@ ul.tabs{
 }
 
 //Story tab section
+.story-logo {
+  height: 40px;
+}
+
 .storytab {
   font-size: 1.5em;
 }
@@ -274,6 +281,12 @@ ul.tabs{
   font-size: 1.4em;
   margin: 0;
   }
+}
+
+.cherry-tree {
+  padding: 0px 12%;
+  height: 450px;
+  margin-top: 45px;
 }
 
 //Menu tab section
@@ -334,7 +347,7 @@ ul.tabs{
     margin: 2px;
     list-style: none;
     &:hover {
-      background-color: HSLA(346, 98%, 37%, 1);
+      background-color: $fontred;
       border-radius: 10px;
     }
   }
