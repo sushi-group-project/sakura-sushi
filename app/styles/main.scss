@@ -42,7 +42,10 @@ body {
   .center-unit{
   margin: auto;
   height: 800px;
-  border: 2px solid blue;
+<<<<<<< HEAD
+=======
+  /* border: 2px solid blue; */
+>>>>>>> ac9785c857b6fcb5db1699875137a3ca818b2a6b
 
 }
   .header{
@@ -53,46 +56,75 @@ body {
     border-bottom: 2px solid $fontred;
     height: 102px;
     width: 100%;
-    position: relative;
+    overflow: auto;
   }
   .header-logo{
-    width: 25%;
-    position: absolute;
-    height:100%;
-    font-size: 3.5em;
 
-  }
-  .header-social{
+    width: 25%;
+    float: left;
+
+    width: 35%;
     position: absolute;
-    width: 30%;
-    border: 2px dashed blue;
-    margin-left:70%;
+
+    font-size: 3.5em;
+  /*   background-color: #FFF; */
+    -webkit-filter: invert(1%);
+    transition-duration: 0.7s;
+    margin-top: -5px;
+}
+
+    .header-logo:hover{
+      background-color: #42FFD3;
+      opacity: 1;
+      -webkit-filter: invert(100%);
+
+    }
+
+
+  .header-social{
+    float: right;
+    width: 20%;
+
     text-align: right;
     font-size: 1.2em;
-    overflow: auto;
-    height: 80px;
+    height: 110px;
+    position: relative;
     a{
       text-decoration: none;
       color: black;
+      transition: color 0.2s ease
+    }
+    span{
     }
   }
+.header-social a:hover{
+  color: $fontred;
+}
 .brandico-facebook-rect{
   font-size: 2.4em;
+
 }
 .brandico-twitter-bird{
+  font-size: 2.0em;
+
+}
+.brandico-instagram-filled{
   font-size: 2.4em;
+
 }
 .col-group > div {
-  padding-left: 1%;
+  padding-left: -1%;
+  margin-left: 8%;
+
 }
 
-@media screen and (min-width: 50em) {
+@media screen and (min-width: 850px) {
   .col-group {
     overflow: hidden;
   }
   .col-group > div {
     float: left;
-    width: 33.3333333%;
+    width: 25.3333333%;
   }
 }
 
@@ -221,13 +253,25 @@ body {
   }
 
   .map {
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 6%;
 }
-  .header-box-three p {
-      font-size:1.3em;
-      text-align: center;
+  .header-box-three a {
+      font-size:1.2em;
+      margin-left: 9%;
+      text-decoration: none;
+      color: black;
+
 }
+.header-box-three a:hover{
+  color: $fontred;
+}
+
+.line2 {
+  padding-left: 3%;
+}
+
+
 
 
 
@@ -243,6 +287,7 @@ section{
 	margin: 0 auto;
   float: left;
   border: 3px dashed blue;
+  margin-bottom: 10px;
 }
 
 ul.tabs{
@@ -282,7 +327,19 @@ ul.tabs{
 //Story tab section
 .story-logo {
   height: 40px;
+  /* background-color: #FFF; */
+  -webkit-filter: invert(1%);
+  transition-duration: 0.7s;
+
 }
+
+  .story-logo:hover{
+    background-color: #42FFD3;
+    /* opacity: 1; */
+    -webkit-filter: invert(100%);
+
+  }
+
 
 .storytab {
   font-size: 1.5em;
@@ -300,6 +357,7 @@ ul.tabs{
   p {
   font-size: 1.4em;
   margin: 0;
+
   }
 }
 
@@ -375,8 +433,53 @@ ul.tabs{
 
 
 //Reservation tab section
+@mixin forms {
+  padding: 10px 0px;
+  input {
+    margin-top: 3px;
+    width: 30%;
+    height: 20px;
+  }
+}
+
 .reservtab {
   font-size: 1.5em;
+}
+
+.reservation-form {
+  margin-top: 30px;
+}
+
+.name-form {
+  @include forms;
+}
+
+.guests-form {
+  @include forms;
+  width: 50%;
+}
+
+.date-form {
+  @include forms;
+  width: 50%;
+}
+
+.request-form {
+  @include forms;
+}
+
+.seating {
+  padding: 10px 0px;
+}
+
+.submit-form {
+  height: 30px;
+  width: 15%;
+  border-radius: 5px;
+  border: none;
+  &:hover {
+    background-color: $fontred;
+  }
 }
 
 //end tabs
@@ -418,12 +521,12 @@ footer{
 font-family:'Junge', serif;
 border-top: 1px solid;
 border-color: hsla(240,1%,83%,1);
-height: 100px;
+height: 75px;
 width: 100%;
-border: 2px solid red;
+/* border: 2px solid red; */
 clear: both;
-border: 2px solid black;
-font-size: 1.6em;
+font-size: 1.4em;
+
 
 
 }
@@ -443,7 +546,7 @@ font-size: 1.6em;
 
 .footright  {
   float: right;
-  margin-top: -24px;
+  margin-top: -16px;
   color: hsla(200,1%,39%,1);
 
 }
@@ -460,7 +563,7 @@ color: $fontred;
 
 .footcenter img{
   width: 3%;
-  margin-left: 45%;
+  margin-left: 49%;
   margin-top: -52px;
   background-color: #FFF;
   opacity: 0.4;
