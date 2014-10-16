@@ -5,4 +5,5 @@ bower_components
 test/bower_components
 .DS_Store
 .idea/*
-app/scripts/token.js
+.15529390101.json
+.sample-sashimi.json
