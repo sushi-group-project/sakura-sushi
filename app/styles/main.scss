@@ -370,6 +370,27 @@ ul.tabs{
   font-size: 1.5em;
 }
 
+.reservation-form {
+  margin-top: 30px;
+  div {
+    padding: 10px 0px;
+    input {
+      margin-top: 3px;
+      width: 30%;
+      height: 20px;
+    }
+    select {
+      margin-top: 3px;
+    }
+  }
+}
+
+.request-form {
+  input {
+    height: 40px;
+  }
+}
+
 //end tabs
 
 //mike's footer and side part
