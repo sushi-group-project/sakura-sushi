@@ -33,7 +33,7 @@ body {
   .center-unit{
   margin: auto;
   height: 800px;
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
 
 }
   .header{
@@ -47,12 +47,24 @@ body {
     position: relative;
   }
   .header-logo{
-    width: 25%;
+    width: 35%;
     position: absolute;
     height:100%;
     font-size: 3.5em;
+  /*   background-color: #FFF; */
+    -webkit-filter: invert(1%);
+    transition-duration: 0.7s;
+    margin-top: -5px;
+}
 
-  }
+    .header-logo:hover{
+      background-color: #42FFD3;
+      opacity: 1;
+      -webkit-filter: invert(100%);
+
+    }
+
+
   .header-social{
     position: absolute;
     width: 30%;
@@ -212,13 +224,25 @@ body {
   }
 
   .map {
-    margin-top: 70px;
+    margin-top: 60px;
     margin-left: 6%;
 }
-  .header-box-three p {
-      font-size:1.3em;
-      text-align: center;
+  .header-box-three a {
+      font-size:1.2em;
+      margin-left: 9%;
+      text-decoration: none;
+      color: black;
+
 }
+.header-box-three a:hover{
+  color: $fontred;
+}
+
+.line2 {
+  padding-left: 3%;
+}
+
+
 
 
 
@@ -234,6 +258,7 @@ section{
 	margin: 0 auto;
   float: left;
   border: 3px dashed blue;
+  margin-bottom: 10px;
 }
 
 ul.tabs{
@@ -273,7 +298,19 @@ ul.tabs{
 //Story tab section
 .story-logo {
   height: 40px;
+  /* background-color: #FFF; */
+  -webkit-filter: invert(1%);
+  transition-duration: 0.7s;
+
 }
+
+  .story-logo:hover{
+    background-color: #42FFD3;
+    /* opacity: 1; */
+    -webkit-filter: invert(100%);
+
+  }
+
 
 .storytab {
   font-size: 1.5em;
@@ -291,6 +328,7 @@ ul.tabs{
   p {
   font-size: 1.4em;
   margin: 0;
+
   }
 }
 
@@ -409,12 +447,12 @@ footer{
 font-family:'Junge', serif;
 border-top: 1px solid;
 border-color: hsla(240,1%,83%,1);
-height: 100px;
+height: 75px;
 width: 100%;
-border: 2px solid red;
+/* border: 2px solid red; */
 clear: both;
-border: 2px solid black;
-font-size: 1.6em;
+font-size: 1.4em;
+
 
 
 }
@@ -434,7 +472,7 @@ font-size: 1.6em;
 
 .footright  {
   float: right;
-  margin-top: -24px;
+  margin-top: -16px;
   color: hsla(200,1%,39%,1);
 
 }
@@ -451,7 +489,7 @@ color: $fontred;
 
 .footcenter img{
   width: 3%;
-  margin-left: 45%;
+  margin-left: 49%;
   margin-top: -52px;
   background-color: #FFF;
   opacity: 0.4;
