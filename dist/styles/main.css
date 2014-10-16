@@ -1,1 +1,0 @@
-*{box-sizing:border-box;border:2px dotted red}body{background:#fff;color:#333;font-family:"Adobe Caslon Pro",Georgia,serif;font-size:62.5%}.container{max-width:1200px}.right-unit{float:right}.right-unit,.left-unit{background-size:cover;height:500px}.left-unit{float:left}.center-unit{margin:auto;height:800px}@media (min-width:600px){.center-unit{width:75%}}

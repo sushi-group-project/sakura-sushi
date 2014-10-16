@@ -1,4 +1,3 @@
-
 // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
@@ -8,15 +7,15 @@ $darkgray: hsla(0, 0%, 88%, 1);
 $lightgray: hsla(0, 0%, 92%, 1);
 // Custom Styles
 
-
+/*
 * {
   font-family: 'Junge';
-}
+} */
 
-
+/* 
 [class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
-}
+} */
 
 body {
   background: white;
