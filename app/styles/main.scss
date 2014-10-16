@@ -1,4 +1,4 @@
-// Bourbon & Neat
+ // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 @import url(http://weloveiconfonts.com/api/?family=brandico);
@@ -7,83 +7,25 @@ $darkgray: hsla(0, 0%, 88%, 1);
 $lightgray: hsla(0, 0%, 92%, 1);
 // Custom Styles
 
-/*
-* {
-  font-family: 'Junge';
-} */
 
-/* 
+* {
+  font-family: 'Junge';
+}
+
+
 [class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-} */
+  font-family: 'brandico', sans-serif;
+}
 
 body {
-  background: white;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #333;
-  font-family: "Adobe Caslon Pro", Georgia, serif;
-  font-size: 62.5%;
+  background: white;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-family: "Adobe Caslon Pro", Georgia, serif;
+  font-size: 62.5%;
 
 }
 .container {
-<<<<<<< HEAD
-  max-width: 1200px;
-
-}
-
-  .center-unit{
-  margin: auto;
-  height: 800px;
-
-}
-  .header{
-    margin-top: 20px;
-    height: 663px;
-  }
-  .header-top{
-    border-bottom: 2px solid $fontred;
-    height: 102px;
-    width: 100%;
-    overflow: auto;
-  }
-  .header-logo{
-
-    width: 25%;
-    float: left;
-
-    height:100%;
-    font-size: 3.5em;
-  /*  background-color: #FFF; */
-    -webkit-filter: invert(1%);
-    transition-duration: 0.7s;
-    margin-top: -5px;
-}
-
-    .header-logo:hover{
-      background-color: #42FFD3;
-      opacity: 1;
-      -webkit-filter: invert(100%);
-
-    }
-
-
-  .header-social{
-    float: right;
-    width: 20%;
-
-    text-align: right;
-    font-size: 1.2em;
-    height: 110px;
-    position: relative;
-    a{
-      text-decoration: none;
-      color: black;
-      transition: color 0.2s ease
-    }
-    span{
-    }
-  }
-=======
   max-width: 1200px;
 
 }
@@ -140,179 +82,178 @@ body {
     span{
     }
   }
->>>>>>> 2ae881a24229022ccac46c127c2a054ce06edc40
 .header-social a:hover{
-  color: $fontred;
+  color: $fontred;
 }
 .brandico-facebook-rect{
-  font-size: 2.4em;
+  font-size: 2.4em;
 
 }
 .brandico-twitter-bird{
-  font-size: 2.0em;
+  font-size: 2.0em;
 
 }
 .brandico-instagram-filled{
-  font-size: 2.4em;
+  font-size: 2.4em;
 
 }
 .col-group > div {
-  padding-left: -1%;
-  margin-left: 8%;
+  padding-left: -1%;
+  margin-left: 8%;
 
 }
 
 @media screen and (min-width: 850px) {
-  .col-group {
-    overflow: hidden;
-  }
-  .col-group > div {
-    float: left;
-    width: 25.3333333%;
-  }
+  .col-group {
+    overflow: hidden;
+  }
+  .col-group > div {
+    float: left;
+    width: 25.3333333%;
+  }
 }
 
 
-  .social-list ul{
-    list-style-type: none;
-    display: inline;
-  }
-  .social-list li{
-    float: left;
-    font-size: 1.5em;
-    display: inline-block;
-  }
-  .social-list a{
-    text-decoration: none;
-    color: black;
-  }
-  .brandico-facebook-rect{
-    margin-left: -10%;
-    margin-top: 12px;
-  }
-  .brandico-twitter-bird{
-    margin-left: 3%;
-    margin-top: 12px;
-  }
-  .brandico-instagram-filled{
-    margin-left: 3%;
-    margin-top: 12px;
-  }
-  .header-pic {
-    height: 313px;
-    width: 100%;
+  .social-list ul{
+    list-style-type: none;
+    display: inline;
+  }
+  .social-list li{
+    float: left;
+    font-size: 1.5em;
+    display: inline-block;
+  }
+  .social-list a{
+    text-decoration: none;
+    color: black;
+  }
+  .brandico-facebook-rect{
+    margin-left: -10%;
+    margin-top: 12px;
+  }
+  .brandico-twitter-bird{
+    margin-left: 3%;
+    margin-top: 12px;
+  }
+  .brandico-instagram-filled{
+    margin-left: 3%;
+    margin-top: 12px;
+  }
+  .header-pic {
+    height: 313px;
+    width: 100%;
 
-  }
-  #header-pic-image{
-    margin-top: 18px;
-    background-color: black;
-    max-width: 100%;
-    height: 271px;
-    img{
-      width: 100%;
-      height: 100%;
-    }
-  }
-  .header-boxes{
-    height: 250px;
-    width: 100%;
-    margin-top: -20px;
-    overflow: auto;
+  }
+  #header-pic-image{
+    margin-top: 18px;
+    background-color: black;
+    max-width: 100%;
+    height: 271px;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .header-boxes{
+    height: 250px;
+    width: 100%;
+    margin-top: -20px;
+    overflow: auto;
 
-  }
-  .header-box-one{
-    float: left;
-    width: 32%;
-    height: 242px;
-    background-color: $darkgray;
-    border: 1px solid hsl(0,0,70);
-    margin-right: 2%;
-    transition: background-color 0.3s ease;
-    position: relative;
-    &:hover{
-      background-color: $lightgray;
-    }
-    h2{
-    text-align: left;
-    position: absolute;
-    left: 4%;
-    width: 92%;
-    padding-bottom: 2%;
-    margin-top: 18px;
-    border-bottom: 1px solid $fontred;
-    }
-    h3{
-    position: absolute;
-    }
-    span{
-    position: absolute;
-    }
-    p{
-    position: absolute;
-    }
-  }
-  .header-box-two{
-    float: left;
-    width: 32%;
-    transition: background-color 0.3s ease;
-    position: relative;
-    height: 242px;
-    background-color: $darkgray;
-    border: 1px solid hsl(0,0,70);
-    width: 32%;
-    &:hover{
-      background-color: $lightgray;
-    }
-    h2{
-      text-align: left;
-      position: absolute;
-      left: 4%;
-      width: 92%;
-      padding-bottom: 2%;
-      margin-top: 18px;
-      border-bottom: 1px solid $fontred;
-    }
+  }
+  .header-box-one{
+    float: left;
+    width: 32%;
+    height: 242px;
+    background-color: $darkgray;
+    border: 1px solid hsl(0,0,70);
+    margin-right: 2%;
+    transition: background-color 0.3s ease;
+    position: relative;
+    &:hover{
+      background-color: $lightgray;
+    }
+    h2{
+    text-align: left;
+    position: absolute;
+    left: 4%;
+    width: 92%;
+    padding-bottom: 2%;
+    margin-top: 18px;
+    border-bottom: 1px solid $fontred;
+    }
+    h3{
+    position: absolute;
+    }
+    span{
+    position: absolute;
+    }
+    p{
+    position: absolute;
+    }
+  }
+  .header-box-two{
+    float: left;
+    width: 32%;
+    transition: background-color 0.3s ease;
+    position: relative;
+    height: 242px;
+    background-color: $darkgray;
+    border: 1px solid hsl(0,0,70);
+    width: 32%;
+    &:hover{
+      background-color: $lightgray;
+    }
+    h2{
+      text-align: left;
+      position: absolute;
+      left: 4%;
+      width: 92%;
+      padding-bottom: 2%;
+      margin-top: 18px;
+      border-bottom: 1px solid $fontred;
+    }
 
-  }
-  .header-box-three{
-    float: right;
-    width: 32%;
-    transition: background-color 0.3s ease;
-    position: relative;
-    background-color: hsla(0, 0%, 88%, 1);
-    border: 1px solid hsl(0,0,70);
-    height: 242px;
-    h2{
-    text-align: left;
-    position: absolute;
-    left: 4%;
-    width: 92%;
-    padding-bottom: 2%;
-    margin-top: 18px;
-    border-bottom: 1px solid $fontred;
-    }
-    &:hover{
-      background-color: $lightgray;
-    }
-  }
+  }
+  .header-box-three{
+    float: right;
+    width: 32%;
+    transition: background-color 0.3s ease;
+    position: relative;
+    background-color: hsla(0, 0%, 88%, 1);
+    border: 1px solid hsl(0,0,70);
+    height: 242px;
+    h2{
+    text-align: left;
+    position: absolute;
+    left: 4%;
+    width: 92%;
+    padding-bottom: 2%;
+    margin-top: 18px;
+    border-bottom: 1px solid $fontred;
+    }
+    &:hover{
+      background-color: $lightgray;
+    }
+  }
 
-  .map {
-    margin-top: 60px;
-    margin-left: 6%;
+  .map {
+    margin-top: 60px;
+    margin-left: 6%;
 }
-  .header-box-three a {
-      font-size:1.2em;
-      margin-left: 9%;
-      text-decoration: none;
-      color: black;
+  .header-box-three a {
+      font-size:1.2em;
+      margin-left: 9%;
+      text-decoration: none;
+      color: black;
 
 }
 .header-box-three a:hover{
-  color: $fontred;
+  color: $fontred;
 }
 
 .line2 {
-  padding-left: 3%;
+  padding-left: 3%;
 }
 
 
@@ -321,209 +262,209 @@ body {
 
 
 @media (min-width: 600px) {
-  .center-unit{
-    width: 75%;
-  }
+  .center-unit{
+    width: 75%;
+  }
 }
 //tabs here//
 section{
-width: 70%;
-margin: 0 auto;
-  float: left;
-  border: 3px dashed blue;
-  margin-bottom: 10px;
+	width: 70%;
+	margin: 0 auto;
+  float: left;
+  border: 3px dashed blue;
+  margin-bottom: 10px;
 }
 
 ul.tabs{
-margin: 10px;
-  margin-bottom: 0;
-list-style: none;
-  border-bottom: solid 1px HSLA(0, 0%, 88%, 1);
-  li {
-    background: none;
-    color: #222;
-    display: inline-block;
-    padding: 10px 15px;
-    margin-bottom: -1px;
-    cursor: pointer;
-    &:hover {
-      color: $fontred;
-    }
-  }
+	margin: 10px;
+  margin-bottom: 0;
+	list-style: none;
+  border-bottom: solid 1px HSLA(0, 0%, 88%, 1);
+  li {
+    background: none;
+    color: #222;
+    display: inline-block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    cursor: pointer;
+    &:hover {
+      color: $fontred;
+    }
+  }
 }
 
 .tabs li.current{
-background-color: white;
-color: #222;
-  border: solid 1px HSLA(0, 0%, 88%, 1);
-  border-bottom: solid 1px white;
+	background-color: white;
+	color: #222;
+  border: solid 1px HSLA(0, 0%, 88%, 1);
+  border-bottom: solid 1px white;
 }
 
 .tab-content{
-display: none;
-padding: 15px;
+	display: none;
+	padding: 15px;
 }
 
 .tab-content.current{
-display: inherit;
+	display: inherit;
 }
 
 //Story tab section
 .story-logo {
-  height: 40px;
-  /* background-color: #FFF; */
-  -webkit-filter: invert(1%);
-  transition-duration: 0.7s;
+  height: 40px;
+  /* background-color: #FFF; */
+  -webkit-filter: invert(1%);
+  transition-duration: 0.7s;
 
 }
 
-  .story-logo:hover{
-    background-color: #42FFD3;
-    /* opacity: 1; */
-    -webkit-filter: invert(100%);
+  .story-logo:hover{
+    background-color: #42FFD3;
+    /* opacity: 1; */
+    -webkit-filter: invert(100%);
 
-  }
+  }
 
 
 .storytab {
-  font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .david-img, .produce-img {
-  width: 50%;
-  height: 200px;
-  float: left;
-  padding: 5px;
-  padding-bottom: 15px;
+  width: 50%;
+  height: 200px;
+  float: left;
+  padding: 5px;
+  padding-bottom: 15px;
 }
 
 #tab-1 {
-  p {
-  font-size: 1.4em;
-  margin: 0;
+  p {
+  font-size: 1.4em;
+  margin: 0;
 
-  }
+  }
 }
 
 .cherry-tree {
-  padding: 0px 12%;
-  height: 450px;
-  margin-top: 45px;
+  padding: 0px 12%;
+  height: 450px;
+  margin-top: 45px;
 }
 
 //Menu tab section
 .menutab {
-  font-size: 1.5em;
+  font-size: 1.5em;
 }
 #tab-2 {
-  font-size: 1.4em;
+  font-size: 1.4em;
 }
 
 .app-menu {
-  text-align: left;
-  padding-bottom: 10px;
-  border-bottom: solid 1px HSLA(0, 0%, 88%, 1);
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: solid 1px HSLA(0, 0%, 88%, 1);
 }
 
 .menu-main {
-  p {
-    width: 80%;
-    float: left;
-    margin: 10px 0%;
-  }
+  p {
+    width: 80%;
+    float: left;
+    margin: 10px 0%;
+  }
 }
 
 .food-price {
-  width: 100%;
-  height: 15px;
-  border-bottom: 1px dashed;
-  margin: 10px 0%;
-  h3 {
-    margin: 0;
-    float: left;
-    height: 17px;
-    background-color: white;
-    padding-right: .5%;
-  }
-  h4 {
-    float: right;
-    margin: 0;
-    height: 17px;
-    background-color: white;
-    padding-left: .5%;
-  }
+  width: 100%;
+  height: 15px;
+  border-bottom: 1px dashed;
+  margin: 10px 0%;
+  h3 {
+    margin: 0;
+    float: left;
+    height: 17px;
+    background-color: white;
+    padding-right: .5%;
+  }
+  h4 {
+    float: right;
+    margin: 0;
+    height: 17px;
+    background-color: white;
+    padding-left: .5%;
+  }
 }
 
 .menu-icons {
-  float: right;
-  border-left: solid 1px HSLA(0, 0%, 60%, 1);
-  height: 35px;
-  display: inline-block;
-  padding: 5px 0px 0px 5px;
-  margin: 10px -0.5% 10px 0%;
-  img {
-    float: right;
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    margin: 2px;
-    list-style: none;
-    &:hover {
-      background-color: $fontred;
-      border-radius: 10px;
-    }
-  }
+  float: right;
+  border-left: solid 1px HSLA(0, 0%, 60%, 1);
+  height: 35px;
+  display: inline-block;
+  padding: 5px 0px 0px 5px;
+  margin: 10px -0.5% 10px 0%;
+  img {
+    float: right;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 2px;
+    list-style: none;
+    &:hover {
+      background-color: $fontred;
+      border-radius: 10px;
+    }
+  }
 }
 
 
 //Reservation tab section
 @mixin forms {
-  padding: 10px 0px;
-  input {
-    margin-top: 3px;
-    width: 30%;
-    height: 20px;
-  }
+  padding: 10px 0px;
+  input {
+    margin-top: 3px;
+    width: 30%;
+    height: 20px;
+  }
 }
 
 .reservtab {
-  font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 .reservation-form {
-  margin-top: 30px;
+  margin-top: 30px;
 }
 
 .name-form {
-  @include forms;
+  @include forms;
 }
 
 .guests-form {
-  @include forms;
-  width: 50%;
+  @include forms;
+  width: 50%;
 }
 
 .date-form {
-  @include forms;
-  width: 50%;
+  @include forms;
+  width: 50%;
 }
 
 .request-form {
-  @include forms;
+  @include forms;
 }
 
 .seating {
-  padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .submit-form {
-  height: 30px;
-  width: 15%;
-  border-radius: 5px;
-  border: none;
-  &:hover {
-    background-color: $fontred;
-  }
+  height: 30px;
+  width: 15%;
+  border-radius: 5px;
+  border: none;
+  &:hover {
+    background-color: $fontred;
+  }
 }
 
 //end tabs
@@ -536,28 +477,28 @@ $fontred: hsla(346,100%,37%,1);
 
 
 .food {
-  @include span-columns(4);
-  float: right;
-  width:25%;
-  border: 2px solid orange;
+  @include span-columns(4);
+  float: right;
+  width:25%;
+  border: 2px solid orange;
 
 
-img {
-  margin-top: 20px;
-  border: 2px solid ;
-}
+ img {
+   margin-top: 20px;
+   border: 2px solid ;
+ }
 
 }
 
 h2 {
 
-  text-align:center;
+  text-align:center;
 }
 
 .center-part{
-  width: 100%;
-  height: 1040px;
-  border: 3px dotted green;
+  width: 100%;
+  height: 1040px;
+  border: 3px dotted green;
 }
 //FOOTER STYLE
 
@@ -576,29 +517,29 @@ font-size: 1.4em;
 }
 
 .footleft {
-  margin-top:19px;
-  word-spacing: 3px;
+  margin-top:19px;
+  word-spacing: 3px;
 
-  a{
-    text-decoration: none;
-  }
+  a{
+    text-decoration: none;
+  }
 }
 
 .name:hover{
-  color: $fontred;
+  color: $fontred;
 }
 
-.footright  {
-  float: right;
-  margin-top: -16px;
-  color: hsla(200,1%,39%,1);
+.footright  {
+  float: right;
+  margin-top: -16px;
+  color: hsla(200,1%,39%,1);
 
 }
 
 .footright a {
-  text-decoration: none;
-  color: hsla(200,1%,39%,1);
-  padding: 5px;
+  text-decoration: none;
+  color: hsla(200,1%,39%,1);
+  padding: 5px;
 }
 
 .footright a:hover{
@@ -606,16 +547,16 @@ color: $fontred;
 }
 
 .footcenter img{
-  width: 3%;
-  margin-left: 49%;
-  margin-top: -52px;
-  background-color: #FFF;
-  opacity: 0.4;
+  width: 3%;
+  margin-left: 49%;
+  margin-top: -52px;
+  background-color: #FFF;
+  opacity: 0.4;
 -webkit-filter: invert(100%);
 }
 
 .footcenter img:hover{
-  background-color: $fontred;
-  opacity: 1;
-  -webkit-filter: invert(1%);
+  background-color: $fontred;
+  opacity: 1;
+  -webkit-filter: invert(1%);
 }
