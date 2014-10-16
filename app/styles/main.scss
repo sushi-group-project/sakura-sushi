@@ -26,6 +26,7 @@ body {
 
 }
 .container {
+<<<<<<< HEAD
   max-width: 1200px;
 
 }
@@ -82,6 +83,64 @@ body {
     span{
     }
   }
+=======
+  max-width: 1200px;
+
+}
+
+  .center-unit{
+  margin: auto;
+  height: 800px;
+
+}
+  .header{
+    margin-top: 20px;
+    height: 663px;
+  }
+  .header-top{
+    border-bottom: 2px solid $fontred;
+    height: 102px;
+    width: 100%;
+    overflow: auto;
+  }
+  .header-logo{
+
+    width: 25%;
+    float: left;
+
+    height:100%;
+    font-size: 3.5em;
+  /*   background-color: #FFF; */
+    -webkit-filter: invert(1%);
+    transition-duration: 0.7s;
+    margin-top: -5px;
+}
+
+    .header-logo:hover{
+      background-color: #42FFD3;
+      opacity: 1;
+      -webkit-filter: invert(100%);
+
+    }
+
+
+  .header-social{
+    float: right;
+    width: 20%;
+
+    text-align: right;
+    font-size: 1.2em;
+    height: 110px;
+    position: relative;
+    a{
+      text-decoration: none;
+      color: black;
+      transition: color 0.2s ease
+    }
+    span{
+    }
+  }
+>>>>>>> 2ae881a24229022ccac46c127c2a054ce06edc40
 .header-social a:hover{
   color: $fontred;
 }
