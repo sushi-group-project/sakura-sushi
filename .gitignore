@@ -1,6 +1,7 @@
 node_modules
 .tmp
 .tmp/*
+.tmp/styles/main.css
 .sass-cache
 bower_components
 test/bower_components
