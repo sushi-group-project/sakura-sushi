@@ -366,28 +366,52 @@ ul.tabs{
 
 
 //Reservation tab section
+@mixin forms {
+  padding: 10px 0px;
+  input {
+    margin-top: 3px;
+    width: 30%;
+    height: 20px;
+  }
+}
+
 .reservtab {
   font-size: 1.5em;
 }
 
 .reservation-form {
   margin-top: 30px;
-  div {
-    padding: 10px 0px;
-    input {
-      margin-top: 3px;
-      width: 30%;
-      height: 20px;
-    }
-    select {
-      margin-top: 3px;
-    }
-  }
+}
+
+.name-form {
+  @include forms;
+}
+
+.guests-form {
+  @include forms;
+  width: 50%;
+}
+
+.date-form {
+  @include forms;
+  width: 50%;
 }
 
 .request-form {
-  input {
-    height: 40px;
+  @include forms;
+}
+
+.seating {
+  padding: 10px 0px;
+}
+
+.submit-form {
+  height: 30px;
+  width: 15%;
+  border-radius: 5px;
+  border: none;
+  &:hover {
+    background-color: $fontred;
   }
 }
 
