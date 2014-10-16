@@ -33,10 +33,7 @@ body {
   .center-unit{
   margin: auto;
   height: 800px;
-<<<<<<< HEAD
-=======
-  /* border: 2px solid blue; */
->>>>>>> ac9785c857b6fcb5db1699875137a3ca818b2a6b
+
 
 }
   .header{
@@ -50,13 +47,13 @@ body {
     overflow: auto;
   }
   .header-logo{
-<<<<<<< HEAD
+
     width: 25%;
     float: left;
-=======
+
     width: 35%;
     position: absolute;
->>>>>>> ac9785c857b6fcb5db1699875137a3ca818b2a6b
+
     height:100%;
     font-size: 3.5em;
   /*   background-color: #FFF; */
@@ -175,7 +172,7 @@ body {
     background-color: $darkgray;
     border: 1px solid hsl(0,0,70);
     margin-right: 2%;
-    transition: background-color 0.3s ease;
+    transition-background-color: 0.3s ease;
     position: relative;
     &:hover{
       background-color: $lightgray;
