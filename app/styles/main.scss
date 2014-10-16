@@ -6,14 +6,26 @@ $fontred: hsla(346,100%,37%,1);
 $darkgray: hsla(0, 0%, 88%, 1);
 $lightgray: hsla(0, 0%, 92%, 1);
 // Custom Styles
+<<<<<<< HEAD
+=======
+
+>>>>>>> 333d1f547280bdb43acd3a915f800efd5a18784b
 
 * {
   font-family: 'Junge';
 }
 
+<<<<<<< HEAD
 [class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
 }
+=======
+
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+>>>>>>> 333d1f547280bdb43acd3a915f800efd5a18784b
 body {
   background: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -30,6 +42,7 @@ body {
   .center-unit{
   margin: auto;
   height: 800px;
+  border: 2px solid blue;
 
 }
   .header{
@@ -54,11 +67,36 @@ body {
     width: 30%;
     border: 2px dashed blue;
     margin-left:70%;
-    margin-top:15px;
-    font-size: 2.2em;
+    text-align: right;
+    font-size: 1.2em;
     overflow: auto;
     height: 80px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
+.brandico-facebook-rect{
+  font-size: 2.4em;
+}
+.brandico-twitter-bird{
+  font-size: 2.4em;
+}
+.col-group > div {
+  padding-left: 1%;
+}
+
+@media screen and (min-width: 50em) {
+  .col-group {
+    overflow: hidden;
+  }
+  .col-group > div {
+    float: left;
+    width: 33.3333333%;
+  }
+}
+
+
   .social-list ul{
     list-style-type: none;
     display: inline;
@@ -182,6 +220,17 @@ body {
     }
   }
 
+  .map {
+    margin-top: 70px;
+    margin-left: 6%;
+}
+  .header-box-three p {
+      font-size:1.3em;
+      text-align: center;
+}
+
+
+
 
 @media (min-width: 600px) {
   .center-unit{
@@ -208,6 +257,9 @@ ul.tabs{
     padding: 10px 15px;
     margin-bottom: -1px;
     cursor: pointer;
+    &:hover {
+      color: $fontred;
+    }
   }
 }
 
@@ -228,6 +280,10 @@ ul.tabs{
 }
 
 //Story tab section
+.story-logo {
+  height: 40px;
+}
+
 .storytab {
   font-size: 1.5em;
 }
@@ -245,6 +301,12 @@ ul.tabs{
   font-size: 1.4em;
   margin: 0;
   }
+}
+
+.cherry-tree {
+  padding: 0px 12%;
+  height: 450px;
+  margin-top: 45px;
 }
 
 //Menu tab section
@@ -305,7 +367,7 @@ ul.tabs{
     margin: 2px;
     list-style: none;
     &:hover {
-      background-color: HSLA(346, 98%, 37%, 1);
+      background-color: $fontred;
       border-radius: 10px;
     }
   }
@@ -358,9 +420,10 @@ border-top: 1px solid;
 border-color: hsla(240,1%,83%,1);
 height: 100px;
 width: 100%;
+border: 2px solid red;
 clear: both;
 border: 2px solid black;
-font-size: 20px;
+font-size: 1.6em;
 
 
 }
@@ -396,8 +459,8 @@ color: $fontred;
 }
 
 .footcenter img{
-  width: 35px;
-  margin-left: 433px;
+  width: 3%;
+  margin-left: 45%;
   margin-top: -52px;
   background-color: #FFF;
   opacity: 0.4;
