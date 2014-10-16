@@ -4,7 +4,6 @@ _.templateSettings = {
 
 
 var flickr = 'https://api.flickr.com/services/rest/?method=flickr.photos.search'+
-		'?method=flickr.people.getPublicPhotos'+
 		'&api_key='+ token +
 		'&text=sashimi'+
 		'&license=1%2C2%2C3%2C4%2C5%2C6'+
@@ -21,7 +20,13 @@ var specials = 'http://restaurantapi.apiary-mock.com/menu/special';
 
 
 
+var newsTemplate = $('.header-box-one').html();
+ 	show = _.template(newsTemplate);
 
+
+$.getJSON(news).done(function (pulling) {
+    $('.header-box-one').append(show(pulling) );
+});
 // var menuTemplate =$('#tab-2').html(),
 //     renders = _.template(menuTemplate);
 //
