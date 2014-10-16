@@ -1,11 +1,14 @@
  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
+@import url(http://weloveiconfonts.com/api/?family=brandico);
 $fontred: hsla(346,100%,37%,1);
 $darkgray: hsla(0, 0%, 88%, 1);
 $lightgray: hsla(0, 0%, 92%, 1);
 // Custom Styles
-
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
 body {
   background: white;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -45,22 +48,36 @@ body {
     position: absolute;
     width: 20%;
     margin-left:80%;
+    margin-top:15px;
     font-size: 2.2em;
-    border: 3px dashed purple;
+    overflow: auto;
+
     height: 80px;
   }
   .social-list ul{
     list-style-type: none;
-    overflow: auto;
     display: inline;
   }
   .social-list li{
     float: left;
-    margin-left: 4%;
+    font-size: 1.5em;
     display: inline-block;
-    height: 25px;
-    background-color: gray;
-    border: 1px solid black;
+  }
+  .social-list a{
+    text-decoration: none;
+    color: black;
+  }
+  .brandico-facebook-rect{
+    margin-left: -10%;
+    margin-top: 12px;
+  }
+  .brandico-twitter-bird{
+    margin-left: 3%;
+    margin-top: 12px;
+  }
+  .brandico-instagram-filled{
+    margin-left: 3%;
+    margin-top: 12px;
   }
   .header-pic {
     height: 313px;
@@ -80,7 +97,7 @@ body {
   .header-boxes{
     height: 250px;
     width: 100%;
-    margin-top: -10px;
+    margin-top: -20px;
     overflow: auto;
 
   }
