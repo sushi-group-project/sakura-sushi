@@ -185,6 +185,17 @@ body {
     }
   }
 
+  .map {
+    margin-top: 70px;
+    margin-left: 6%;
+}
+  .header-box-three p {
+      font-size:1.3em;
+      text-align: center;
+}
+
+
+
 
 @media (min-width: 600px) {
   .center-unit{
@@ -363,7 +374,7 @@ height: 100px;
 width: 100%;
 clear: both;
 border: 2px solid black;
-font-size: 20px;
+font-size: 1.6em;
 
 
 }
@@ -399,8 +410,8 @@ color: $fontred;
 }
 
 .footcenter img{
-  width: 35px;
-  margin-left: 433px;
+  width: 3%;
+  margin-left: 45%;
   margin-top: -52px;
   background-color: #FFF;
   opacity: 0.4;
