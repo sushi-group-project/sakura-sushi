@@ -10,4 +10,13 @@ $(document).ready(function(){
 		$("#"+tab_id).addClass('current');
 	})
 
-})
+});
+
+// $(".vegan-img").hover(function(e) {
+//     $($(this).data(".popup")).css({
+//         left: e.pageX + 1,
+//         top: e.pageY + 1
+//     }).stop().show(100);
+// }, function() {
+//     $($(this).data(".popup")).hide();
+// });

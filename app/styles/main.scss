@@ -271,13 +271,12 @@ section{
 	width: 70%;
 	margin: 0 auto;
   float: left;
-  border: 3px dashed blue;
+  // border: 3px dashed blue;
   margin-bottom: 10px;
 }
 
 ul.tabs{
-	margin: 10px;
-  margin-bottom: 0;
+	margin: 10px 10px 0px 0px;
 	list-style: none;
   border-bottom: solid 1px HSLA(0, 0%, 88%, 1);
   li {
@@ -312,6 +311,7 @@ ul.tabs{
 //Story tab section
 .story-logo {
   height: 40px;
+  margin-bottom: 10px;
   /* background-color: #FFF; */
   -webkit-filter: invert(1%);
   transition-duration: 0.7s;
@@ -320,7 +320,7 @@ ul.tabs{
 
   .story-logo:hover{
     background-color: #42FFD3;
-    /* opacity: 1; */
+    // opacity: 1;
     -webkit-filter: invert(100%);
 
   }
@@ -417,14 +417,49 @@ ul.tabs{
 }
 
 
+.popup {
+  display: none;
+  width: 20%;
+  height: 75px;
+  background-color: HSLA(346, 98%, 37%, 1);
+  border-radius: 3px;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 50px;
+  .triangle {
+	  border-left: 10px solid transparent;
+	  border-right: 10px solid transparent;
+    border-bottom: 10px solid HSLA(346, 98%, 37%, 1);
+    display: inline-block;
+    position: absolute;
+    margin-left: 81.5%;
+    margin-top: -10px;
+  }
+  h3 {
+  }
+  p {
+    color: white;
+  }
+}
+
 //Reservation tab section
+#tab-3 {
+  font-size: 1.4em;
+}
+
 @mixin forms {
   padding: 10px 0px;
   input {
     margin-top: 3px;
-    width: 30%;
+    width: 170px;
     height: 20px;
   }
+}
+
+@mixin input {
+  border-radius: 5px;
+  border-radius: 3px;
+  border: solid 1px HSLA(0, 0%, 60%, 1);
 }
 
 .reservtab {
@@ -437,31 +472,49 @@ ul.tabs{
 
 .name-form {
   @include forms;
+  input {
+    @include input;
+  }
 }
 
 .guests-form {
   @include forms;
-  width: 50%;
+  input {
+    @include input;
+    width: 120px;
+  }
 }
 
 .date-form {
   @include forms;
-  width: 50%;
+  input {
+    @include input;
+    width: 120px;
+  }
 }
 
 .request-form {
   @include forms;
+  input {
+    height: 40px;
+    @include input;
+  }
 }
+
 
 .seating {
   padding: 10px 0px;
+  select {
+    width: 121px;
+  }
 }
 
 .submit-form {
-  height: 30px;
-  width: 15%;
+  height: 35px;
+  width: 120px;
   border-radius: 5px;
   border: none;
+  font-weight: bolder;
   &:hover {
     background-color: $fontred;
   }
