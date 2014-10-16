@@ -1,5 +1,9 @@
 node_modules
 .tmp
+<<<<<<< HEAD
+=======
+.tmp/*
+>>>>>>> 4dab2d70e5a6426c47267cd9299f06dbe6503490
 .sass-cache
 bower_components
 test/bower_components
