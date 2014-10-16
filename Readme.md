@@ -1,5 +1,5 @@
 ## The Iron Yard : Group Project
-Hello Hello
+Hello Hello nice nice
 The following students participated in this project.
 
 * Victoria Nicholson - http://link_to_github_profile
