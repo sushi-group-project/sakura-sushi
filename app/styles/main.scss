@@ -33,6 +33,7 @@ body {
   .center-unit{
   margin: auto;
   height: 800px;
+
 }
   .header{
     margin-top: 20px;
@@ -45,10 +46,10 @@ body {
     overflow: auto;
   }
   .header-logo{
+
     width: 25%;
     float: left;
-    width: 35%;
-    position: absolute;
+
     height:100%;
     font-size: 3.5em;
   /*   background-color: #FFF; */
@@ -68,6 +69,7 @@ body {
   .header-social{
     float: right;
     width: 20%;
+
     text-align: right;
     font-size: 1.2em;
     height: 110px;
