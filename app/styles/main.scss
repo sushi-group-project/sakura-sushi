@@ -10,6 +10,7 @@ $lightgray: hsla(0, 0%, 92%, 1);
 
 * {
   font-family: 'Junge';
+
 }
 
 
@@ -41,16 +42,13 @@ body {
   }
   .header-top{
     border-bottom: 2px solid $fontred;
-    height: 102px;
     width: 100%;
     overflow: auto;
   }
   .header-logo{
-
-    width: 25%;
+    width: 45%;
     float: left;
-
-    height:100%;
+    height: 100%;
     font-size: 3.5em;
   /*   background-color: #FFF; */
     -webkit-filter: invert(1%);
@@ -69,11 +67,11 @@ body {
   .header-social{
     float: right;
     width: 20%;
-
     text-align: right;
     font-size: 1.2em;
-    height: 110px;
+    height: 98px;
     position: relative;
+
     a{
       text-decoration: none;
       color: black;
@@ -257,11 +255,6 @@ body {
   padding-left: 3%;
 }
 
-
-
-
-
-
 @media (min-width: 600px) {
   .center-unit{
     width: 75%;
@@ -272,7 +265,6 @@ section{
 	width: 70%;
 	margin: 0 auto;
   float: left;
-  border: 3px dashed blue;
   margin-bottom: 10px;
 }
 
