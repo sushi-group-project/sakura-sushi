@@ -33,6 +33,7 @@ body {
   .center-unit{
   margin: auto;
   height: 800px;
+  border: 2px solid blue;
 
 }
   .header{
@@ -57,11 +58,36 @@ body {
     width: 30%;
     border: 2px dashed blue;
     margin-left:70%;
-    margin-top:15px;
-    font-size: 2.2em;
+    text-align: right;
+    font-size: 1.2em;
     overflow: auto;
     height: 80px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
   }
+.brandico-facebook-rect{
+  font-size: 2.4em;
+}
+.brandico-twitter-bird{
+  font-size: 2.4em;
+}
+.col-group > div {
+  padding-left: 1%;
+}
+
+@media screen and (min-width: 50em) {
+  .col-group {
+    overflow: hidden;
+  }
+  .col-group > div {
+    float: left;
+    width: 33.3333333%;
+  }
+}
+
+
   .social-list ul{
     list-style-type: none;
     display: inline;
@@ -361,6 +387,7 @@ border-top: 1px solid;
 border-color: hsla(240,1%,83%,1);
 height: 100px;
 width: 100%;
+border: 2px solid red;
 clear: both;
 border: 2px solid black;
 font-size: 20px;
