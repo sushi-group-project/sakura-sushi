@@ -12,10 +12,6 @@ $lightgray: hsla(0, 0%, 92%, 1);
   font-family: 'Junge';
 }
 
-[class*="brandico-"]:before {
-  font-family: 'brandico', sans-serif;
-}
-
 
 [class*="brandico-"]:before {
   font-family: 'brandico', sans-serif;
@@ -38,7 +34,6 @@ body {
   margin: auto;
   height: 800px;
 
-
 }
   .header{
     margin-top: 20px;
@@ -55,11 +50,9 @@ body {
     width: 25%;
     float: left;
 
-    width: 35%;
-    position: absolute;
     height:100%;
     font-size: 3.5em;
-
+  /*   background-color: #FFF; */
     -webkit-filter: invert(1%);
     transition-duration: 0.7s;
     margin-top: -5px;
