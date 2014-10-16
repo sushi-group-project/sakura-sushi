@@ -271,6 +271,7 @@ height: 100px;
 width: 100%;
 clear: both;
 border: 2px solid black;
+font-size: 20px;
 
 
 }
@@ -290,7 +291,7 @@ border: 2px solid black;
 
 .footright  {
   float: right;
-  margin-top: -20px;
+  margin-top: -24px;
   color: hsla(200,1%,39%,1);
 
 }
@@ -307,7 +308,7 @@ color: $fontred;
 
 .footcenter img{
   width: 35px;
-  margin-left: 489px;
+  margin-left: 433px;
   margin-top: -52px;
   background-color: #FFF;
   opacity: 0.4;
