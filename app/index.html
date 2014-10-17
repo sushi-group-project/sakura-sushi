@@ -202,16 +202,7 @@
     <!--side photos-->
 
 <div class="food">
-  <h2>Our Food</h2>
-  <script type="text/template" id="foodpic">
-
-  <img src="http://placekitten.com/g/216/216" >
-  <img src="http://placekitten.com/g/216/216" >
-  <img src="http://placekitten.com/g/216/216" >
-  <img src="http://placekitten.com/g/216/216" >
-
-</script>
-
+  <ul class="food_pics"></ul>
 </div><!--end side photos-->
 
 
@@ -254,16 +245,11 @@
 <span class="description"><%=description%></span>
 </script>
 
-<script type="text/template" id="menu_box">
-<span class="item"><%=item%></span>
-<span class="price"><%=price%></span>
-<span class="description"><%=description%></span>
-</script>
 
-<script type="text/template" id="menu_box">
-<span class="item"><%=item%></span>
-<span class="price"><%=price%></span>
-<span class="description"><%=description%></span>
+<script type="text/template" id="foodpic">
+  <li>
+    <img src="<%=img_url%>"/>
+  </li>
 </script>
 
 

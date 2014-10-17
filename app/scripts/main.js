@@ -1,7 +1,8 @@
-console.log('The Iron Yard Rocks');
+'use strict';
 
 
-var flickrUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search'+
+var flickrUrl = 'https://api.flickr.com/services/rest/?'+
+    'method=flickr.photos.search'+
 		'&api_key='+ token +
 		'&text=sashimi'+
 		'&license=1%2C2%2C3%2C4%2C5%2C6'+
@@ -15,7 +16,25 @@ var menuUrl = 'http://restaurantapi.apiary-mock.com/menu';
 var newsUrl ='http://restaurantapi.apiary-mock.com/news/latest';
 
 var specialsUrl = 'http://restaurantapi.apiary-mock.com/menu/special';
-
+//img_url
+var $flickrUl = $('.food_pics')
+var flickrTemplate = $('#foodpic').html();
+var appear =_.template(flickrTemplate);
+var bar = _.template(
+  'https://farm<%=farm%>.staticflickr.com/<%=server%>/<%=id%>_<%=secret%>_m.jpg'
+);
+flickrUrl = 'flickrtemp.json'
+$.getJSON(flickrUrl).done(function(flickr_data) {
+/*{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}
+*/
+var foo = flickr_data.photos.photo;
+var bee = _.first(foo,3);
+bee.forEach(function(photo_info){
+  var ade = bar(photo_info);
+  var cee = appear({"img_url":ade});
+  $flickrUl.append(cee);
+});
+})
 
 
 var newsTemplate = $('#news_box').html();
