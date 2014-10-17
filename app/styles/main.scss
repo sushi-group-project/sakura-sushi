@@ -238,26 +238,52 @@ body {
       background-color: $lightgray;
     }
   }
-
   .map {
-    margin-top: 60px;
-    margin-left: 6%;
+    margin-top: 49px;
+    width: 80%;
+    position: absolute;
+    margin-left: 10%;
 }
-  .header-box-three a {
+  .header-box-three .address {
       font-size:1.2em;
-      margin-left: 9%;
+      margin-left: 10%;
+      width: 80%;
+      position: absolute;
+      margin-top: 150px;
+      text-align: center;
+      height: 26px;
+
       text-decoration: none;
       color: black;
 
+}
+.header-box-three a{
+  text-decoration: none;
 }
 .header-box-three a:hover{
   color: $fontred;
 }
 
-.line2 {
+.phone {
   padding-left: 3%;
-}
+  position: absolute;
+  margin-left:10%;
+  width: 70%;
+  margin-top: 180px;
+  width: 60%;
+  font-size: 1.2em;
 
+}
+.email{
+
+  margin-left: 70%;
+  width: 30%;
+  font-size: 1.2em;
+  position: absolute;
+  margin-top: 180px;
+
+
+}
 @media (min-width: 600px) {
   .center-unit{
     width: 75%;
@@ -558,6 +584,7 @@ width: 100%;
 /* border: 2px solid red; */
 clear: both;
 font-size: 1.4em;
+overflow: auto;
 
 
 
@@ -566,6 +593,8 @@ font-size: 1.4em;
 .footleft {
   margin-top:19px;
   word-spacing: 3px;
+  width: 33%;
+  /* float: left; */
 
   a{
     text-decoration: none;
@@ -580,6 +609,8 @@ font-size: 1.4em;
   float: right;
   margin-top: -16px;
   color: hsla(200,1%,39%,1);
+  margin-right: -7%;
+  width: 33%;
 
 }
 
@@ -593,6 +624,9 @@ font-size: 1.4em;
 color: $fontred;
 }
 
+.footcenter {
+  width: 34%;
+}
 .footcenter img{
   width: 3%;
   margin-left: 49%;
@@ -600,6 +634,7 @@ color: $fontred;
   background-color: #FFF;
   opacity: 0.4;
 -webkit-filter: invert(100%);
+
 }
 
 .footcenter img:hover{
