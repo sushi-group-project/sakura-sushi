@@ -23,7 +23,7 @@ var appear =_.template(flickrTemplate);
 var bar = _.template(
   'https://farm<%=farm%>.staticflickr.com/<%=server%>/<%=id%>_<%=secret%>_m.jpg'
 );
-flickrUrl = 'flickrtemp.json'
+// flickrUrl = 'flickrtemp.json'
 $.getJSON(flickrUrl).done(function(flickr_data) {
 /*{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}
 */
