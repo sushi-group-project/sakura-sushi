@@ -560,6 +560,7 @@ width: 100%;
 /* border: 2px solid red; */
 clear: both;
 font-size: 1.4em;
+overflow: auto;
 
 
 
@@ -568,6 +569,8 @@ font-size: 1.4em;
 .footleft {
   margin-top:19px;
   word-spacing: 3px;
+  width: 33%;
+  /* float: left; */
 
   a{
     text-decoration: none;
@@ -582,6 +585,8 @@ font-size: 1.4em;
   float: right;
   margin-top: -16px;
   color: hsla(200,1%,39%,1);
+  margin-right: -7%;
+  width: 33%;
 
 }
 
@@ -595,6 +600,9 @@ font-size: 1.4em;
 color: $fontred;
 }
 
+.footcenter {
+  width: 34%;
+}
 .footcenter img{
   width: 3%;
   margin-left: 49%;
@@ -602,6 +610,7 @@ color: $fontred;
   background-color: #FFF;
   opacity: 0.4;
 -webkit-filter: invert(100%);
+
 }
 
 .footcenter img:hover{
