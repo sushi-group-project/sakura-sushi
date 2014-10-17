@@ -50,14 +50,17 @@
             <img src="http://f.cl.ly/items/0r090X303C0R0w3P3X1e/header%20photo.png" />
           </div>
         </div>
+
+
         <div class="header-boxes">
 
           <div class="header-box-one">
             <h2>Latest News</h2>
-             <p>{{post_id}}</p>
+
           </div>
           <div class="header-box-two">
           <h2>Today's Special</h2>
+
           </div>
           <div class="header-box-three">
           <h2>Our Location</h2>
@@ -69,6 +72,9 @@
 <a href="#"<span class="line2"> Phone #: 555-555-5555</span></a><a href="#"<span class="line2"> Email Us!</span></a>
 
           </div>
+        </div>
+        </script>
+        <!--end of header-boxes-->
 
         </div><!--end of header-boxes-->
 
@@ -86,29 +92,39 @@
 
     	<div id="tab-1" class="tab-content current">
 
-<<<<<<< HEAD
-=======
-
-
         <img class="story-logo" src="http://f.cl.ly/items/3V2q0u1C1B223Q383K1d/headerlogoSS.png" alt="" />
 
-
-
-
-
->>>>>>> dd1854529272bd5f1249787d3e5957beec56b8ea
-        <img class="story-logo" src="http://f.cl.ly/items/3V2q0u1C1B223Q383K1d/headerlogoSS.png" alt="" />
-
-        <p>In business over 15 years Sakura has built a reputation for fresh food, a ever changing selection depending on the season and what is in the market and outstanding service.  Sakura was started by David Hada who started out over 20 years ago as a wakiita (an apprentice) and working his way up to itamae (head chef).  Throwing regular dinner parties and expanding to pop-up kitchens David saw the opportunity to open his own place.  He picked a small location and lovingly oversaw every aspect of the design.  Within a year he had outgrown his first site and picked a larger space and once again oversaw all the design.</p><br>
+        <p>In business over 15 years Sakura has built a reputation for fresh food, an ever changing selection depending on the season and what is in the market and outstanding service.  Sakura was started by David Hada who started out over 20 years ago as a wakiita (an apprentice) and working his way up to itamae (head chef).  Throwing regular dinner parties and expanding to pop-up kitchens David saw the opportunity to open his own place.  He picked a small location and lovingly oversaw every aspect of the design.  Within a year he had outgrown his first site and picked a larger space and once again oversaw all the design.</p><br>
         <img class="david-img" src="http://si.wsj.net/public/resources/images/BN-BS185_mag031_J_20140227114326.jpg" alt="" />
         <img class="produce-img" src="http://www.geneticliteracyproject.org/wp/wp-content/uploads/2012/06/organic-farming.jpg" alt="" /><br>
         <p>Every day David picks out the freshest fish from his suppliers, he is insistent on local produce as much as possible, even going out to farms to select the vegetables himself.  This hands on approach has made Sakura an outstanding success for 15 years, with it’s ever changing specials and relaxing atmosphere Sakura is a place to enjoy Japanese fine dining.</p>
         <img class="cherry-tree" src="../images/tree.jpg" alt="" />
     	</div> <!--tab-1-->
 
+    	</div>
+
     	<div id="tab-2" class="tab-content">
        <img class="story-logo" src="http://f.cl.ly/items/3V2q0u1C1B223Q383K1d/headerlogoSS.png" alt="" />
-  		 <h2 class="app-menu">APPETIZERS</h2>
+
+  		 <h2 class="app-menu_1">APPETIZERS</h2>
+
+       <div class="menu-main">
+         <div class ="food-price">
+           <h3>Food Item</h3>
+           <h4>15</h4>
+         </div>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+         <ul class="menu-icons">
+           <img class="vegan-img" src="../images/vegan.png" alt="" />
+           <img src="../images/fire.png" alt="" />
+           <img src="../images/star.png" alt="" />
+           <img src="../images/allergy.png" alt="" />
+         </ul>
+         <div class="popup">
+           <div class=triangle></div>
+         </div>
+       </div>
+       <h2 class="app-menu_2">Entree</h2>
        <div class="menu-main">
          <div class ="food-price">
            <h3>Food Item</h3>
@@ -122,21 +138,7 @@
            <img src="../images/allergy.png" alt="" />
          </ul>
        </div>
-       <h2 class="app-menu">Entree</h2>
-       <div class="menu-main">
-         <div class ="food-price">
-           <h3>Food Item</h3>
-           <h4>15</h4>
-         </div>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-         <ul class="menu-icons">
-           <img src="../images/vegan.png" alt="" />
-           <img src="../images/fire.png" alt="" />
-           <img src="../images/star.png" alt="" />
-           <img src="../images/allergy.png" alt="" />
-         </ul>
-       </div>
-       <h2 class="app-menu">Sides</h2>
+       <h2 class="app-menu_3">Sides</h2>
        <div class="menu-main">
          <div class ="food-price">
            <h3>Food Item</h3>
@@ -187,7 +189,7 @@
               <button type="submit" class="submit-form">Reserve Table</button>
             </div>
         </form>
-    	</div> <!--tab-3-->
+    	 <!--tab-3-->
     </section><!--end of tabs-->
     <!--side photos-->
 
@@ -233,6 +235,29 @@
 </span>
 
 </footer>
+<script type="text/template" id="news_box">
+<span class="title"><%=title%></span>
+<span class="post"><%=post%></span>
+</script>
+
+<script type="text/template" id="menu_box">
+<span class="item"><%=item%></span>
+<span class="price"><%=price%></span>
+<span class="description"><%=description%></span>
+</script>
+
+<script type="text/template" id="menu_box">
+<span class="item"><%=item%></span>
+<span class="price"><%=price%></span>
+<span class="description"><%=description%></span>
+</script>
+
+<script type="text/template" id="menu_box">
+<span class="item"><%=item%></span>
+<span class="price"><%=price%></span>
+<span class="description"><%=description%></span>
+</script>
+
 
     </div><!--center unit ends here-->
 

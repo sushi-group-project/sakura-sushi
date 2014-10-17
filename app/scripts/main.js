@@ -6,29 +6,26 @@ var flickrUrl = 'https://api.flickr.com/services/rest/?'+
 		'&api_key='+ token +
 		'&text=sashimi'+
 		'&license=1%2C2%2C3%2C4%2C5%2C6'+
-		'&user_id=' + user_id +
 		'&format=json'+
 		'&nojsoncallback=1'
 		;
 
-var menuUrl = 'http://restaurantapi.apiary-mock.com/menu';
 
-var newsUrl ='http://restaurantapi.apiary-mock.com/news/latest';
+var menuUrl = 'http://private-anon-6e99440bf-restaurantapi.apiary-mock.com/menu';
 
-var specialsUrl = 'http://restaurantapi.apiary-mock.com/menu/special';
-//img_url
+var newsUrl ='http://private-anon-6e99440bf-restaurantapi.apiary-mock.com/news/latest';
+
+var specialsUrl = 'http://private-anon-6e99440bf-restaurantapi.apiary-mock.com/menu/special';
+
 var $flickrUl = $('.food_pics')
 var flickrTemplate = $('#foodpic').html();
 var appear =_.template(flickrTemplate);
 var bar = _.template(
   'https://farm<%=farm%>.staticflickr.com/<%=server%>/<%=id%>_<%=secret%>_m.jpg'
 );
-// flickrUrl = 'flickrtemp.json'
 $.getJSON(flickrUrl).done(function(flickr_data) {
-/*{"photos":{"page":1,"pages":0,"perpage":100,"total":"0","photo":[]},"stat":"ok"}
-*/
 var foo = flickr_data.photos.photo;
-var bee = _.first(foo,3);
+var bee = _.first(foo,4);
 bee.forEach(function(photo_info){
   var ade = bar(photo_info);
   var cee = appear({"img_url":ade});
@@ -64,6 +61,9 @@ $.getJSON(menuUrl).done(function(puller){
     $('.app-menu_3').append(renderer(x));
   });
 });
+
+
+
 
 
 /*
