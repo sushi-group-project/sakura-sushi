@@ -1,61 +1,50 @@
 console.log('The Iron Yard Rocks');
 
 
-/*var flickr = 'https://api.flickr.com/services/rest/?method=flickr.photos.search'+
+var flickrUrl = 'https://api.flickr.com/services/rest/?method=flickr.photos.search'+
 		'&api_key='+ token +
 		'&text=sashimi'+
 		'&license=1%2C2%2C3%2C4%2C5%2C6'+
 		'&user_id=' + user_id +
 		'&format=json'+
 		'&nojsoncallback=1'
-		;*/
+		;
 
-// var menu = 'http://restaurantapi.apiary-mock.com/menu';
+var menuUrl = 'http://restaurantapi.apiary-mock.com/menu';
 
-// var news ='http://restaurantapi.apiary-mock.com/news/latest';
+var newsUrl ='http://restaurantapi.apiary-mock.com/news/latest';
 
-// var specials = 'http://restaurantapi.apiary-mock.com/menu/special';
+var specialsUrl = 'http://restaurantapi.apiary-mock.com/menu/special';
 
 
 
 var newsTemplate = $('#news_box').html();
-     var show = _.template(newsTemplate);
-
-
-      $.getJSON('http://restaurantapi.apiary-mock.com/news/latest').done(function (pulling) {
-          $('.header-box-one').append(show(pulling));
-      });
+var show = _.template(newsTemplate);
+$.getJSON(newsUrl).done(function (pulling) {
+    $('.header-box-one').append(show(pulling));
+});
 
 
 var menuTemplate = $('#menu_box').html();
-    var render = _.template(menuTemplate);
+var renderer = _.template(menuTemplate);
 
-    $.getJSON('http://restaurantapi.apiary-mock.com/menu').done(function(pull) {
-      pull.appetizers.forEach(function(y) {
-        $('.app-menu_1').append(render(y));
-      });
-    });
+$.getJSON(menuUrl).done(function(pull) {
+  pull.appetizers.forEach(function(y) {
+    $('.app-menu_1').append(renderer(y));
+  });
+});
 
-    var menuTemplate = $('#menu_box').html();
-        var render1 =_.template(menuTemplate);
+$.getJSON(menuUrl).done(function(yank){
+  yank.entrees.forEach(function(z) {
+    $('.app-menu_2').append(renderer(z));
+  });
+});
 
-        $.getJSON('http://restaurantapi.apiary-mock.com/menu').done(function(yank){
-          yank.entrees.forEach(function(x) {
-            $('.app-menu_2').append(render1(x));
-
-          });
-        });
-
-
-    var menuTemplate = $('#menu_box').html();
-        var renders =_.template(menuTemplate);
-
-        $.getJSON('http://restaurantapi.apiary-mock.com/menu').done(function(puller){
-          puller.sides.forEach(function(x) {
-            $('.app-menu_3').append(renders(x));
-
-          });
-        });
+$.getJSON(menuUrl).done(function(puller){
+  puller.sides.forEach(function(x) {
+    $('.app-menu_3').append(renderer(x));
+  });
+});
 
 
 /*
