@@ -169,17 +169,37 @@ body {
     height: 242px;
     background-color: $darkgray;
     border: 1px solid hsl(0,0,70);
+
     margin-right: 2%;
     transition: background-color 0.3s ease;
     position: relative;
     &:hover{
       background-color: $lightgray;
     }
+    .title{
+      color: red;
+      font-size: 1.2em;
+      position: absolute;
+      margin-top: 49px;
+      margin-left: 5%;
+    }
+    .post{
+    font-size: 1.2em;
+    color: green;
+    text-align: justify;
+    width: 90%;
+    position: absolute;
+    margin-top: 67px;
+    margin-left: 5%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
     h2{
     text-align: left;
     position: absolute;
     left: 4%;
     width: 92%;
+
     padding-bottom: 2%;
     margin-top: 18px;
     border-bottom: 1px solid $fontred;
@@ -194,6 +214,9 @@ body {
     position: absolute;
     }
   }
+
+
+
   .header-box-two{
     float: left;
     width: 32%;
@@ -220,6 +243,7 @@ body {
   .header-box-three{
     float: right;
     width: 32%;
+    list-style-type: none;
     transition: background-color 0.3s ease;
     position: relative;
     background-color: hsla(0, 0%, 88%, 1);
@@ -252,10 +276,8 @@ body {
       margin-top: 150px;
       text-align: center;
       height: 26px;
-
       text-decoration: none;
       color: black;
-
 }
 .header-box-three a{
   text-decoration: none;
@@ -265,25 +287,23 @@ body {
 }
 
 .phone {
-  padding-left: 3%;
   position: absolute;
   margin-left:10%;
-  width: 70%;
-  margin-top: 180px;
+  margin-top: 190px;
   width: 60%;
   font-size: 1.2em;
 
 }
-.email{
-
-  margin-left: 70%;
-  width: 30%;
-  font-size: 1.2em;
+.phone2 {
   position: absolute;
-  margin-top: 180px;
-
+  margin-left:60%;
+  width: 40%;
+  margin-right: 10%;
+  margin-top: 190px;
+  font-size: 1.2em;
 
 }
+
 @media (min-width: 600px) {
   .center-unit{
     width: 75%;
