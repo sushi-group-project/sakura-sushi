@@ -17,6 +17,7 @@ var newsUrl ='http://private-anon-6e99440bf-restaurantapi.apiary-mock.com/news/l
 
 var specialsUrl = 'http://private-anon-6e99440bf-restaurantapi.apiary-mock.com/menu/special';
 
+
 var $flickrUl = $('.food_pics')
 var flickrTemplate = $('#foodpic').html();
 var appear =_.template(flickrTemplate);
