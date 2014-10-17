@@ -115,50 +115,26 @@
     	<div id="tab-2" class="tab-content">
        <img class="story-logo" src="http://f.cl.ly/items/3V2q0u1C1B223Q383K1d/headerlogoSS.png" alt="" />
 
-  		 <h2 class="app-menu_1">APPETIZERS</h2>
-
-       <h2 class="app-menu_1">Entree</h2>
-       <div class="menu-main">
-         <div class ="food-price">
-           <h3>Food Item</h3>
-           <h4>15</h4>
-         </div>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-         <ul class="menu-icons">
-           <img src="../images/vegan.png" alt="" />
+  		 <h2 class="">APPETIZERS</h2>
+       <div class="app-menu_1">
+         <!-- <div class ="food-price"> -->
+           <!-- <h3>Food Item</h3>
+           <h4>15</h4> -->
+         <!-- </div> -->
+         <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p> -->
+         <!-- <ul class="menu-icons"> -->
+           <!-- <img class="vegan" src="../images/vegan.png" alt="" />
            <img src="../images/fire.png" alt="" />
            <img src="../images/star.png" alt="" />
-           <img src="../images/allergy.png" alt="" />
-         </ul>
-       </div> <!--menu-main-->
-       <h2 class="app-menu_2">Entree</h2>
-       <div class="menu-main">
-         <div class ="food-price">
-           <h3>Food Item</h3>
-           <h4>15</h4>
-         </div>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-         <ul class="menu-icons">
-           <img src="../images/vegan.png" alt="" />
-           <img src="../images/fire.png" alt="" />
-           <img src="../images/star.png" alt="" />
-           <img src="../images/allergy.png" alt="" />
-         </ul>
-       </div> <!--menu-main-->
-       <h2 class="app-menu_3">Sides</h2>
-       <div class="menu-main">
-         <div class ="food-price">
-           <h3>Food Item</h3>
-           <h4>15</h4>
-         </div>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-         <ul class="menu-icons">
-           <img src="../images/vegan.png" alt="" />
-           <img src="../images/fire.png" alt="" />
-           <img src="../images/star.png" alt="" />
-           <img src="../images/allergy.png" alt="" />
-         </ul>
-       </div> <!--menu-main-->
+           <img src="../images/allergy.png" alt="" /> -->
+         <!-- </ul> -->
+       </div>
+       <h2 class="">Entree</h2>
+       <div class="app-menu_2">
+       </div>
+       <h2 class="">Sides</h2>
+       <div class="app-menu_3">
+       </div>
       </div> <!--tab-2-->
     	<div id="tab-3" class="tab-content">
         <img class="story-logo" src="http://f.cl.ly/items/3V2q0u1C1B223Q383K1d/headerlogoSS.png" alt="" />
@@ -239,23 +215,23 @@
 </script>
 
 <script type="text/template" id="menu_box">
-<span class="item"><%=item%></span>
-<span class="price"><%=price%></span>
-<span class="description"><%=description%></span>
-<span class=" allergies "><%= allergies %></span>
-<span class=" favorite "><%= favorite %></span>
-<span class=" spicy "><%= spicy %></span>
-<span class=" vegan "><%= vegan %></span>
+  <div class ="food-price">
+    <span class="item"><%=item%></span>
+    <span class="price"><%=price%></span>
+  </div>
+  <span class="description"><%=description%></span>
+  <ul class="menu-icons">
+    <span class=" allergies "><%= allergies %></span>
+    <span class=" favorite "><%= favorite %></span>
+    <span class=" spicy "><%= spicy %></span>
+    <span class=" vegan "><%= vegan %></span>
+  </ul>
 </script>
 
 
 <script type="text/template" id="foodpic">
   <li>
     <img src="<%=img_url%>"/>
-    <span class=" allergies "><%= allergies %></span>
-    <span class=" favorite "><%= favorite %></span>
-    <span class=" spicy "><%= spicy %></span>
-    <span class=" vegan "><%= vegan %></span>
   </li>
 </script>
 
