@@ -412,36 +412,6 @@ ul.tabs{
   }
 }
 
-
-.popup {
-  // display: none;
-  white-space: pre;
-  background-color: HSLA(346, 98%, 37%, 1);
-  border-radius: 3px;
-  position: absolute;
-  margin-left: -9.45%;
-  margin-top: 35px;
-  &:hover {
-    display: inline-block;
-  }
-  // .triangle {
-	//   border-left: 10px solid transparent;
-	//   border-right: 10px solid transparent;
-  //   border-bottom: 10px solid HSLA(346, 98%, 37%, 1);
-  //   display: inline-block;
-  //   margin-left: -25px;
-  //   margin-top: -27px;
-  // }
-  h4 {
-    color: white;
-    border-bottom: solid 1px white;
-  }
-  p {
-    color: white;
-    display: inline-block;
-  }
-}
-
 .veg:hover {
   div {
   display: inline-block;
