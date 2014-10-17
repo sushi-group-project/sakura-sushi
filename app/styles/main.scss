@@ -414,27 +414,55 @@ ul.tabs{
 
 
 .popup {
-  display: none;
-  width: 20%;
-  height: 75px;
+  // display: none;
+  white-space: pre;
   background-color: HSLA(346, 98%, 37%, 1);
   border-radius: 3px;
   position: absolute;
-  margin-left: 25%;
-  margin-top: 50px;
-  .triangle {
-	  border-left: 10px solid transparent;
-	  border-right: 10px solid transparent;
-    border-bottom: 10px solid HSLA(346, 98%, 37%, 1);
+  margin-left: -9.45%;
+  margin-top: 35px;
+  &:hover {
     display: inline-block;
-    position: absolute;
-    margin-left: 81.5%;
-    margin-top: -10px;
   }
-  h3 {
+  // .triangle {
+	//   border-left: 10px solid transparent;
+	//   border-right: 10px solid transparent;
+  //   border-bottom: 10px solid HSLA(346, 98%, 37%, 1);
+  //   display: inline-block;
+  //   margin-left: -25px;
+  //   margin-top: -27px;
+  // }
+  h4 {
+    color: white;
+    border-bottom: solid 1px white;
   }
   p {
     color: white;
+    display: inline-block;
+  }
+}
+
+.veg:hover {
+  div {
+  display: inline-block;
+  }
+}
+
+.fire:hover {
+  div {
+  display: inline-block;
+  }
+}
+
+.star:hover {
+  div {
+  display: inline-block;
+  }
+}
+
+.allergy:hover {
+  div {
+  display: inline-block;
   }
 }
 
