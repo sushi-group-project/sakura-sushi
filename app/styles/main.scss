@@ -238,52 +238,26 @@ body {
       background-color: $lightgray;
     }
   }
-  .map {
-    margin-top: 49px;
-    width: 80%;
-    position: absolute;
-    margin-left: 10%;
-}
-  .header-box-three .address {
-      font-size:1.2em;
-      margin-left: 10%;
-      width: 80%;
-      position: absolute;
-      margin-top: 150px;
-      text-align: center;
-      height: 26px;
 
+  .map {
+    margin-top: 60px;
+    margin-left: 6%;
+}
+  .header-box-three a {
+      font-size:1.2em;
+      margin-left: 9%;
       text-decoration: none;
       color: black;
 
-}
-.header-box-three a{
-  text-decoration: none;
 }
 .header-box-three a:hover{
   color: $fontred;
 }
 
-.phone {
+.line2 {
   padding-left: 3%;
-  position: absolute;
-  margin-left:10%;
-  width: 70%;
-  margin-top: 180px;
-  width: 60%;
-  font-size: 1.2em;
-
 }
-.email{
 
-  margin-left: 70%;
-  width: 30%;
-  font-size: 1.2em;
-  position: absolute;
-  margin-top: 180px;
-
-
-}
 @media (min-width: 600px) {
   .center-unit{
     width: 75%;
@@ -438,27 +412,29 @@ ul.tabs{
   }
 }
 
-.veg:hover {
-  div {
-  display: inline-block;
-  }
-}
 
-.fire:hover {
-  div {
-  display: inline-block;
+.popup {
+  display: none;
+  width: 20%;
+  height: 75px;
+  background-color: HSLA(346, 98%, 37%, 1);
+  border-radius: 3px;
+  position: absolute;
+  margin-left: 25%;
+  margin-top: 50px;
+  .triangle {
+	  border-left: 10px solid transparent;
+	  border-right: 10px solid transparent;
+    border-bottom: 10px solid HSLA(346, 98%, 37%, 1);
+    display: inline-block;
+    position: absolute;
+    margin-left: 81.5%;
+    margin-top: -10px;
   }
-}
-
-.star:hover {
-  div {
-  display: inline-block;
+  h3 {
   }
-}
-
-.allergy:hover {
-  div {
-  display: inline-block;
+  p {
+    color: white;
   }
 }
 
@@ -553,15 +529,29 @@ $fontred: hsla(346,100%,37%,1);
   @include span-columns(4);
   float: right;
   width:25%;
-  border: 2px solid orange;
 
+
+.food_pics {
+  list-style-type: none;
+  width: 25%;
+  margin-left: -17%;
+  margin-top: 33px;
+
+}
 
  img {
    margin-top: 20px;
    border: 2px solid ;
+   opacity: 0.6;
+   &:hover {
+     opacity: 1.5;
+   }
+
  }
 
 }
+
+
 
 h2 {
 
