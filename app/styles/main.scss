@@ -333,7 +333,6 @@ ul.tabs{
 //Story tab section
 .story-logo {
   height: 40px;
-  margin-bottom: 10px;
   /* background-color: #FFF; */
   -webkit-filter: invert(1%);
   transition-duration: 0.7s;
@@ -369,9 +368,16 @@ ul.tabs{
 }
 
 .cherry-tree {
-  padding: 0px 12%;
-  height: 450px;
-  margin-top: 45px;
+  max-width: 100%;
+  padding: 0px 21%;
+  height: 365px;
+  margin-top: 25px;
+}
+
+.def {
+  color: $fontred;
+  font-size: 1.2em;
+  margin-left: 3%;
 }
 
 //Menu tab section
@@ -380,6 +386,11 @@ ul.tabs{
 }
 #tab-2 {
   font-size: 1.4em;
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .app-menu {
@@ -412,6 +423,7 @@ ul.tabs{
 .description {
   display: inline-block;
   width: 90%;
+  font-size: .87em;
 }
 
 @mixin icons {
@@ -433,7 +445,6 @@ ul.tabs{
   height: 25px;
   display: inline-block;
   padding: 5px 0px 0px 5px;
-  margin: 10px -0.5% 10px 0%;
   img {
     @include icons;
   }
@@ -461,6 +472,10 @@ ul.tabs{
   img {
     @include icons;
   }
+}
+
+.food-price .item {
+  font-weight: bolder;
 }
 
 .veg:hover {
@@ -526,7 +541,7 @@ ul.tabs{
   @include forms;
   input {
     @include input;
-    width: 120px;
+    width: 140px;
   }
 }
 
@@ -534,7 +549,7 @@ ul.tabs{
   @include forms;
   input {
     @include input;
-    width: 120px;
+    width: 140px;
   }
 }
 
