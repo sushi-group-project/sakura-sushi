@@ -371,7 +371,7 @@ ul.tabs{
   max-width: 100%;
   padding: 0px 21%;
   height: 365px;
-  margin-top: 25px;
+  margin-top: 50px;
 }
 
 .def {
@@ -509,6 +509,7 @@ ul.tabs{
 
 @mixin forms {
   padding: 10px 0px;
+  font-weight: bolder;
   input {
     margin-top: 3px;
     width: 170px;
@@ -555,17 +556,24 @@ ul.tabs{
 
 .request-form {
   @include forms;
-  input {
+  .textarea {
     height: 40px;
     @include input;
+    margin-top: 3px;
+    &:hover {
+      width: 500px;
+      height: 100px;
+    }
   }
 }
 
 
 .seating {
   padding: 10px 0px;
+  font-weight: bolder;
   select {
-    width: 121px;
+    width: 140px;
+    margin-top: 3px;
   }
 }
 
@@ -578,6 +586,12 @@ ul.tabs{
   &:hover {
     background-color: $fontred;
   }
+}
+
+.def2 {
+  color: $fontred;
+  font-size: .85em;
+  margin-left: 3%;
 }
 
 //end tabs

@@ -11,3 +11,10 @@ $(document).ready(function(){
 	})
 
 });
+
+$(document).ready(function(){
+
+$(".menu").addClass( function(){
+  	$(this).css(".allergies");
+	});
+});
