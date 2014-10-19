@@ -46,24 +46,45 @@ var menuTemplate = $('#menu_box').html();
 var renderer = _.template(menuTemplate);
 
 $.getJSON(menuUrl).done(function(pull) {
-  pull.appetizers.forEach(function(y) {
+  var allmenu = [];
+  var apps = pull.appetizers;
+  apps.forEach(function(y) {
+    allmenu.push(y);
     $('.app-menu_1').append(renderer(y));
   });
-});
-
-$.getJSON(menuUrl).done(function(yank){
-  yank.entrees.forEach(function(z) {
+  pull.entrees.forEach(function(z) {
+    allmenu.push(z);
     $('.app-menu_2').append(renderer(z));
   });
-});
-
-$.getJSON(menuUrl).done(function(puller){
-  puller.sides.forEach(function(x) {
+  pull.sides.forEach(function(x) {
+    allmenu.push(x);
     $('.app-menu_3').append(renderer(x));
   });
+
+  $.getJSON(specialsUrl).done(function(yank){
+    var specialID = yank.menu_item_id;
+    var specials = _.where(allmenu, {"id": specialID});
+    var specialTemplate = $('#special-box').html();
+    var rend = _.template(specialTemplate);
+    specials.forEach(function(fooditem){
+     $('.header-box-two').append(rend(fooditem));
+    });
+
+    /*
+    _.filter(allmenu, function(food){
+      return specialID === food.id
+    });
+    */
+
+  });
+
 });
 
 
+
+//I want to look at the special and then filter  through the menu
+//and if the item on the menu matches the special
+//I want to get it.
 
 
 
