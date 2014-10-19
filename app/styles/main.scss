@@ -426,11 +426,17 @@ ul.tabs{
   font-size: .87em;
 }
 
+.app-menu_2 .description {
+  display: inline-block;
+  width: 90%;
+  font-size: .87em;
+  padding: 5px 0% 5px 0%;
+}
+
 @mixin icons {
   float: right;
-  display: inline-block;
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   margin: 2px;
   list-style: none;
   &:hover {
@@ -441,10 +447,8 @@ ul.tabs{
 
 .app-menu_1 .menu-icons {
   float: right;
-  border-left: solid 1px HSLA(0, 0%, 60%, 1);
   height: 25px;
-  display: inline-block;
-  padding: 5px 0px 0px 5px;
+  margin: -42px -1% 0px 0%;
   img {
     @include icons;
   }
@@ -452,11 +456,8 @@ ul.tabs{
 
 .app-menu_2 .menu-icons {
   float: right;
-  border-left: solid 1px HSLA(0, 0%, 60%, 1);
   height: 25px;
-  display: inline-block;
-  padding: 5px 0px 0px 5px;
-  margin: -20px -0.5% 0px 0%;
+  margin: -25px -0.5% 0px 0%;
   img {
     @include icons;
   }
@@ -464,14 +465,16 @@ ul.tabs{
 
 .app-menu_3 .menu-icons {
   float: right;
-  border-left: solid 1px HSLA(0, 0%, 60%, 1);
   height: 25px;
-  display: inline-block;
   padding: 5px 0px 0px 5px;
   margin: -20px -0.5% 0px 0%;
   img {
     @include icons;
   }
+}
+
+.vegan, .spicy, .favorite, .allergies {
+  display: none;
 }
 
 .food-price .item {

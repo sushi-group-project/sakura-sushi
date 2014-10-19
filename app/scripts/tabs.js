@@ -11,9 +11,3 @@ $(document).ready(function(){
 	})
 
 });
-
-
-
-$(document).addClass( function() {
-		$('.menu-icons').innerHTML('<img src="../images/fire.png" alt="" />')
-});

@@ -224,11 +224,29 @@
     <span class="price"><%=price%></span>
   </div>
   <span class="description"><%=description%></span>
+
   <ul class="menu-icons">
-    <span class=" vegan "><%= vegan %><img class="vegan" src="../images/vegan.png" alt="" /></span>
-    <span class=" spicy "><%= spicy %>  <img src="../images/fire.png" alt="" /></span>
-    <span class=" favorite "><%= favorite %><img src="../images/star.png" alt="" /></span>
-    <span class=" allergies "><%= allergies %>  <img src="../images/allergy.png" alt="" /></span>
+
+  <% if(vegan){ %>
+    <img src="../images/vegan.png" alt="" />
+    <span class=" vegan "><%= vegan %></span>
+    <% };
+
+    if(spicy){ %>
+    <img src="../images/fire.png" alt="" />
+    <span class=" spicy "><%= spicy %>  </span>
+     <% };
+
+    if(favorite){ %>
+    <img src="../images/star.png" alt="" />
+    <span class=" favorite "><%= favorite %></span>
+    <% };
+
+    if(allergies){ %>
+    <img src="../images/allergy.png" alt="" />
+    <span class=" allergies "><%= allergies %>  </span>
+    <% }; %>
+
   </ul>
 </script>
 
