@@ -157,19 +157,18 @@ body {
     }
   }
   .header-boxes{
-    height: 250px;
+    height: 242px;
     width: 100%;
     margin-top: -20px;
     overflow: auto;
+}
 
-  }
   .header-box-one{
     float: left;
     width: 32%;
     height: 242px;
     background-color: $darkgray;
     border: 1px solid hsl(0,0,70);
-
     margin-right: 2%;
     transition: background-color 0.3s ease;
     position: relative;
@@ -180,6 +179,7 @@ body {
       color: red;
       font-size: 1.2em;
       position: absolute;
+      border: 2px solid blue;
       margin-top: 49px;
       margin-left: 5%;
     }
@@ -188,18 +188,18 @@ body {
     color: green;
     text-align: justify;
     width: 90%;
+    border: 2px dashed black;
+    height: 170px;
     position: absolute;
     margin-top: 67px;
     margin-left: 5%;
-    overflow: hidden;
-    text-overflow: ellipsis;
+
   }
     h2{
     text-align: left;
     position: absolute;
     left: 4%;
     width: 92%;
-
     padding-bottom: 2%;
     margin-top: 18px;
     border-bottom: 1px solid $fontred;
@@ -214,8 +214,6 @@ body {
     position: absolute;
     }
   }
-
-
 
   .header-box-two{
     float: left;
@@ -304,11 +302,51 @@ body {
 
 }
 
+@media (max-width: 780px){
+  .header-box-one{
+    width: 98%;
+    height: 150px;
+    margin-left: 1%;
+    margin-bottom: 10px;
+  }
+  .header-box-two{
+    width: 98%;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-left: 1%;
+  }
+  .header-box-three{
+    width: 99%;
+    height: 150px;
+    margin-left: 0.5%;
+    margin-bottom: 10px;
+  }
+  .map{
+    height: 50px;
+    margin-top: 53px;
+  }
+  .header-box-three .address{margin-top: 82px;}
+  .phone{
+    margin-top:103px;
+    width: 30%;
+    margin-left: 5%;
+
+  }
+  .phone2{
+    margin-top: 103px;
+    width: 21%;
+    margin-left: 75%;
+  }
+  .header-box-one.post{
+    height: 100px;
+  }
+}
 @media (min-width: 600px) {
   .center-unit{
     width: 75%;
   }
 }
+
 //tabs here//
 section{
 	width: 70%;
