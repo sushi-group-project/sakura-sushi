@@ -588,6 +588,10 @@ ul.tabs{
   }
 }
 
+.submit-form:focus {
+  outline: 0;
+}
+
 .def2 {
   color: $fontred;
   font-size: .85em;

@@ -12,9 +12,8 @@ $(document).ready(function(){
 
 });
 
-$(document).ready(function(){
 
-$(".menu").addClass( function(){
-  	$(this).css(".allergies");
-	});
+
+$(document).addClass( function() {
+		$('.menu-icons').innerHTML('<img src="../images/fire.png" alt="" />')
 });
