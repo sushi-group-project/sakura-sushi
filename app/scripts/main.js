@@ -47,8 +47,7 @@ var renderer = _.template(menuTemplate);
 
 $.getJSON(menuUrl).done(function(pull) {
   var allmenu = [];
-  var apps = pull.appetizers;
-  apps.forEach(function(y) {
+  pull.appetizers.forEach(function(y) {
     allmenu.push(y);
     $('.app-menu_1').append(renderer(y));
   });
