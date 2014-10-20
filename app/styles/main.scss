@@ -184,11 +184,17 @@ body {
       margin-left: 5%;
     }
     .post{
+      display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    height: 13.8em;
+    line-height: 1.2em;
     font-size: 1.2em;
     color: black;
     text-align: justify;
-    width: 90%;
-    position: absolute;
+    max-width: 90%;
     margin-top: 67px;
     margin-left: 5%;
 
@@ -304,7 +310,7 @@ body {
 @media (max-width: 780px){
   .header-box-one{
     width: 98%;
-    height: 150px;
+
     margin-left: 1%;
     margin-bottom: 10px;
   }
@@ -316,23 +322,23 @@ body {
   }
   .header-box-three{
     width: 99%;
-    height: 150px;
+    height: 200px;
     margin-left: 0.5%;
     margin-bottom: 10px;
   }
   .map{
-    height: 50px;
+    height: 79px;
     margin-top: 53px;
   }
-  .header-box-three .address{margin-top: 82px;}
+  .header-box-three .address{margin-top: 112px;}
   .phone{
-    margin-top:103px;
+    margin-top:137px;
     width: 30%;
     margin-left: 5%;
 
   }
   .phone2{
-    margin-top: 103px;
+    margin-top: 137px;
     width: 21%;
     margin-left: 75%;
   }
