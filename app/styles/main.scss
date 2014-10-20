@@ -46,13 +46,9 @@ body {
     overflow: auto;
   }
   .header-logo{
-
-
-    width: 35%;
+    width: 45%;
     float: left;
-
     height: 100%;
-
     font-size: 3.5em;
     -webkit-filter: invert(1%);
     transition-duration: 0.7s;
@@ -65,6 +61,11 @@ body {
       -webkit-filter: invert(100%);
 
     }
+@media (max-width: 950px) {
+  .header-logo{
+    width: 55%;
+  }
+}
 
 
   .header-social{
@@ -242,6 +243,23 @@ body {
     }
 
   }
+//for header box two
+.item{
+  font-size: 1.2em;
+  position: absolute;
+  margin-top: 170px;
+}
+.price{
+  font-size: 1.2em;
+  position: absolute;
+  margin-top: 180px;
+}
+.description{
+  position: absolute;
+  font-size: 1.2em;
+  margin-top: 190px;
+}
+
   .header-box-three{
     float: right;
     width: 32%;
