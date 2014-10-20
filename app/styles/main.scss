@@ -176,20 +176,18 @@ body {
       background-color: $lightgray;
     }
     .title{
-      color: red;
+      color: black;
+      font-weight: bold;
       font-size: 1.2em;
       position: absolute;
-      border: 2px solid blue;
       margin-top: 49px;
       margin-left: 5%;
     }
     .post{
     font-size: 1.2em;
-    color: green;
+    color: black;
     text-align: justify;
     width: 90%;
-    border: 2px dashed black;
-    height: 170px;
     position: absolute;
     margin-top: 67px;
     margin-left: 5%;
@@ -279,6 +277,7 @@ body {
 }
 .header-box-three a{
   text-decoration: none;
+  color: black;
 }
 .header-box-three a:hover{
   color: $fontred;
