@@ -244,20 +244,41 @@ body {
 
   }
 //for header box two
+.special_pic{
+ width: 90%;
+ margin-left: 5%;
+ margin-top: 60px;
+ height: 100px;
+ background-color: black;
+ position: absolute;
+ img{
+   opacity: .7;
+   width: 100%;
+   height: 100%;
+ }
+ }
 .item{
-  font-size: 1.2em;
+  font-size: 1.4em;
+  font-weight: bold;
   position: absolute;
   margin-top: 170px;
+  margin-left: 5%;
 }
 .price{
-  font-size: 1.2em;
+  font-weight: bold;
+  font-size: 1.4em;
   position: absolute;
-  margin-top: 180px;
+  margin-top: 170px;
+  margin-left:88%;
 }
 .description{
   position: absolute;
-  font-size: 1.2em;
-  margin-top: 190px;
+  font-size: 1.1em;
+  width: 90%;
+  height: 35px;
+  text-align: justify;
+  margin-top: 200px;
+  margin-left: 5%;
 }
 
   .header-box-three{
@@ -334,9 +355,21 @@ body {
   }
   .header-box-two{
     width: 98%;
-    height: 150px;
+    height: 210px;
     margin-bottom: 10px;
     margin-left: 1%;
+  }
+  .special_pic{
+    height: 80px;
+  }
+  .item{
+    margin-top: 150px;
+  }
+  .price{
+    margin-top: 150px;
+  }
+  .description{
+    margin-top:170px;
   }
   .header-box-three{
     width: 99%;
