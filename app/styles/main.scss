@@ -533,7 +533,7 @@ ul.tabs{
   height: 15px;
   border-bottom: 1px dashed;
   margin: 10px 0%;
-  .item {
+  .item1 {
     margin: 0;
     float: left;
     height: 17px;
@@ -541,7 +541,7 @@ ul.tabs{
     padding-right: .5%;
     text-overflow: ellipsis;
   }
-  .price {
+  .price-tab {
     float: right;
     margin: 0;
     height: 17px;
@@ -550,13 +550,13 @@ ul.tabs{
   }
 }
 
-.description {
+.description-tab {
   display: inline-block;
   width: 90%;
   font-size: .87em;
 }
 
-.app-menu_2 .description {
+.app-menu_2 .description-tab {
   display: inline-block;
   width: 90%;
   font-size: .87em;
