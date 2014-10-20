@@ -272,7 +272,7 @@ section{
 }
 
 ul.tabs{
-	margin: 10px 10px 0px 0px;
+	margin: 10px 2.56% 0px 0%;
 	list-style: none;
   border-bottom: solid 1px HSLA(0, 0%, 88%, 1);
   li {
@@ -297,7 +297,7 @@ ul.tabs{
 
 .tab-content{
 	display: none;
-	padding: 15px;
+	padding: 15px 2.645% 15px 2.645%;
 }
 
 .tab-content.current{
@@ -307,7 +307,6 @@ ul.tabs{
 //Story tab section
 .story-logo {
   height: 40px;
-  margin-bottom: 10px;
   /* background-color: #FFF; */
   -webkit-filter: invert(1%);
   transition-duration: 0.7s;
@@ -343,9 +342,16 @@ ul.tabs{
 }
 
 .cherry-tree {
-  padding: 0px 12%;
-  height: 450px;
-  margin-top: 45px;
+  max-width: 100%;
+  padding: 0px 21%;
+  height: 365px;
+  margin-top: 50px;
+}
+
+.def {
+  color: $fontred;
+  font-size: 1.2em;
+  margin-left: 3%;
 }
 
 //Menu tab section
@@ -354,6 +360,12 @@ ul.tabs{
 }
 #tab-2 {
   font-size: 1.4em;
+  position: relative;
+  h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
 }
 
 .app-menu {
@@ -362,27 +374,20 @@ ul.tabs{
   border-bottom: solid 1px HSLA(0, 0%, 88%, 1);
 }
 
-.menu-main {
-  p {
-    width: 80%;
-    float: left;
-    margin: 10px 0%;
-  }
-}
-
 .food-price {
   width: 100%;
   height: 15px;
   border-bottom: 1px dashed;
   margin: 10px 0%;
-  h3 {
+  .item {
     margin: 0;
     float: left;
     height: 17px;
     background-color: white;
     padding-right: .5%;
+    text-overflow: ellipsis;
   }
-  h4 {
+  .price {
     float: right;
     margin: 0;
     height: 17px;
@@ -391,27 +396,138 @@ ul.tabs{
   }
 }
 
-.menu-icons {
-  float: right;
-  border-left: solid 1px HSLA(0, 0%, 60%, 1);
-  height: 35px;
+.description {
   display: inline-block;
-  padding: 5px 0px 0px 5px;
-  margin: 10px -0.5% 10px 0%;
-  img {
-    float: right;
-    display: inline-block;
-    width: 22px;
-    height: 22px;
-    margin: 2px;
-    list-style: none;
-    &:hover {
-      background-color: $fontred;
-      border-radius: 10px;
-    }
+  width: 90%;
+  font-size: .87em;
+}
+
+.app-menu_2 .description {
+  display: inline-block;
+  width: 90%;
+  font-size: .87em;
+  padding: 5px 0% 5px 0%;
+}
+
+@mixin icons {
+  float: right;
+  height: 18px;
+  margin: 1px;
+  list-style: none;
+  &:hover {
+    background-color: $fontred;
+    border-radius: 10px;
   }
 }
 
+@mixin popup {
+  display: none;
+  white-space: normal;
+  height: 9%;
+  background-color: $fontred;
+  position: absolute;
+  cursor: default;
+  width: 60%;
+  margin-left: -50%;
+  margin-top: 20px;
+  border-radius: 10px;
+  padding: 1.5%;
+  h3 {
+    margin: 0;
+    color: white;
+    border-bottom: solid 1px white;
+    margin-bottom: 5px;
+  }
+  p {
+    margin: 0;
+    color: white;
+  }
+}
+
+.vegan-popup {
+  @include popup;
+  padding: 3%;
+}
+
+.a-popup:hover .vegan-popup {
+  display: inline;
+}
+
+.spicy-popup {
+  @include popup;
+  padding: 3%;
+}
+
+.a-popup:hover .spicy-popup {
+  display: inline;
+}
+
+.fav-popup {
+  @include popup;
+  padding: 3%;
+}
+
+.a-popup:hover .fav-popup {
+  display: inline;
+}
+
+.allergy-popup {
+  @include popup;
+}
+
+.a-popup:hover .allergy-popup {
+  display: inline;
+}
+
+
+.app-menu_1 .menu-icons {
+  float: right;
+  width: 17%;
+  height: 25px;
+  margin: -42px -1% 0px 0%;
+  img {
+    @include icons;
+    cursor: default;
+  }
+}
+
+.app-menu_2 .menu-icons {
+  float: right;
+  width: 17%;
+  height: 25px;
+  margin: -22px -0.5% 0px 0%;
+  img {
+    @include icons;
+    cursor: default;
+  }
+}
+
+.app-menu_3 .menu-icons {
+  float: right;
+  height: 25px;
+  padding: 5px 0px 0px 5px;
+  margin: -20px -0.5% 0px 0%;
+  img {
+    @include icons;
+  }
+}
+
+<<<<<<< HEAD
+=======
+.vegan, .spicy, .favorite, .allergies {
+  display: none;
+}
+
+.food-price .item {
+  font-weight: bolder;
+}
+
+.veg:hover {
+  div {
+  display: inline-block;
+  }
+}
+>>>>>>> 0eca0f49618911d3d115e0ed5a502332fe029f10
 
 .popup {
   display: none;
@@ -445,6 +561,7 @@ ul.tabs{
 
 @mixin forms {
   padding: 10px 0px;
+  font-weight: bolder;
   input {
     margin-top: 3px;
     width: 170px;
@@ -477,7 +594,7 @@ ul.tabs{
   @include forms;
   input {
     @include input;
-    width: 120px;
+    width: 140px;
   }
 }
 
@@ -485,35 +602,53 @@ ul.tabs{
   @include forms;
   input {
     @include input;
-    width: 120px;
+    width: 140px;
   }
 }
 
 .request-form {
   @include forms;
-  input {
+  .textarea {
     height: 40px;
     @include input;
+    margin-top: 3px;
+    &:hover {
+      width: 100%;
+      height: 100px;
+    }
   }
 }
 
 
 .seating {
   padding: 10px 0px;
+  font-weight: bolder;
   select {
-    width: 121px;
+    width: 140px;
+    margin-top: 3px;
   }
 }
 
 .submit-form {
   height: 35px;
-  width: 120px;
+  width: 140px;
   border-radius: 5px;
   border: none;
   font-weight: bolder;
   &:hover {
     background-color: $fontred;
+    color: white;
   }
+}
+
+.submit-form:focus {
+  outline: 0;
+}
+
+.def2 {
+  color: $fontred;
+  font-size: .85em;
+  margin-left: 3%;
 }
 
 //end tabs
