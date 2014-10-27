@@ -220,9 +220,9 @@
 </span>
 
 </footer>
-<script type="text/template" id="news_box">
-<span class="title"><%=title%></span>
-<span class="post"><%=post%></span>
+<script type="text/x-handlebars-template" id="news_box">
+<span class="title">{{ title }}</span>
+<span class="post">{{ post }}</span>
 </script>
 
 <script type="text/template" id="menu_box">
@@ -314,12 +314,13 @@
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/underscore/underscore.js"></script>
+    <script src="../bower_components/handlebars/handlebars.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
           <script src="scripts/token.js"></script>
           <script src="scripts/tabs.js"></script>
-          
+
         <!-- build:js scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
