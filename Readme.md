@@ -1,11 +1,11 @@
 ## The Iron Yard : Group Project
-Hello Hello nice nice
-The following students participated in this project.
 
-* Victoria Nicholson - http://link_to_github_profile
-* Chase Simpson - http://link_to_github_profile
-* Mike Zevitas - http://link_to_github_profile
-* Maggie Martin - http://link_to_github_profile
+Our assignment was to create a website based on a fictional client's mockup and request to have a responsive site for their restaurant. The following students participated in this project.
+
+* Victoria Nicholson -
+* Chase Simpson -
+* Mike Zevitas -
+* Maggie Martin -
 
 ## We used three API's to create this site
 
